@@ -1,0 +1,62 @@
+# Site
+repository: sproogen/resume-theme
+# favicon: images/favicon.ico
+
+# Personal info
+name: Timon S. Gutleb
+title: PhD student in applied mathematics
+email: timon.gutleb@gmail.com
+# website: www.github.com/sproogen/resume-theme
+
+# Social links
+twitter_username: TimonGutleb
+github_username:  TSGut
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: chillwildlife
+linkedin_username: gutleb
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+
+# About Section
+about_title:
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  I am a PhD student of applied mathematics at Imperial College London, with a background in mathematics, physics and philosophy. I am also an associated student of the doctoral program “Dissipation and Dispersion in Nonlinear PDEs” through the University of Vienna.
+
+  My research focus is on numerical analysis and the development of computational tools for PDEs, integral equations and fractional differential equations.
+
+# Projects Section
+# projects_title: Projects
+
+# More Section
+more_title: Conference talks
+more_content: | # this will include new lines to allow paragraphs
+  <p></p>
+   - “[BProbeM](https://github.com/TSGut/BProbeM): a tool to measure matrix geometries”, ESI Workshop on [Matrix Models for Noncommutative Geometry and String Theory](https://homepage.univie.ac.at/harold.steinacker/MM-ESI-homepage/index.html)
+
+  <h3>Teaching</h3>
+  - Student tutor for Analysis 1 and 2 for Physicists, first year undergraduate calculus courses [(2015-2018)](https://ufind.univie.ac.at/en/person.html?id=59491&teaching=true), University of Vienna
+
+  <h3>Scientific Outreach and Volunteering</h3>
+  - Volunteer work for [paleoarxiv](https://paleorxiv.github.io/) and the [Phylogeny Explorer](https://phylogenyexplorerproject.com/) project (2018-2019)
+  - Exhibition guide for the Austrian Academy of Sciences exhibit in celebration of 100 years of general relativity (2015)
+  - Translator English → German for various educational platforms such as coursera.org and TED Talks (2015-2016)
+
+# Education Section
+# educaton_title: Education
+
+# Footer
+footer_show_references: true
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag

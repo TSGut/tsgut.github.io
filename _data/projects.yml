@@ -1,0 +1,26 @@
+- layout: top
+  name: Numerics for fractional differential equations
+  #link: github.com/sproogen
+  #github: sproogen/resume-theme
+  #quote: >
+  #
+  description: | # this will include new lines to allow paragraphs
+    Soon.
+
+- layout: top
+  name: Spectral methods for integral equations
+  #link: github.com/sproogen
+  #github: sproogen/resume-theme
+  #quote: >
+  #
+  description: | # this will include new lines to allow paragraphs
+    Spectral methods are numerical methods which achieve exponential convergence through the use of appropriate bases (such as orthogonal polynomials). When set up correctly, one obtains sparse linear systems which can be solved with high efficiency.
+
+- layout: top
+  name: Numerics for relativistic Schrödinger-type equations
+  #link: github.com/sproogen
+  #github: sproogen/resume-theme
+  #quote: >
+  #
+  description: | # this will include new lines to allow paragraphs
+    Relativistic variants of the Schrödinger equation such as the Pauli, Dirac and Klein-Gordon equations are used to model the behavior of particles moving at high velocities. When coupled to electromagnetic equations such as the Maxwell equations, these PDEs describing fermion and boson behavior are a challenge to solve numerically in the appropriate 3D context, even with benign assumptions on the potentials and boundaries. I work with the group at the Wolfgang Pauli Insitute and the Vienna Doctoral Program 'Dissipation and Dispersion in Nonlinear PDEs' to try and tackle these challenges both in modeling and in implementation.

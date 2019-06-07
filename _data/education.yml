@@ -1,0 +1,21 @@
+- layout: top
+  name: Imperial College London
+  dates: 2018 - ongoing
+  qualification: PhD student applied mathematics
+  #quote: >
+- layout: top
+  name: Vienna Doctoral Program 'Dissipation and Dispersion in Nonlinear PDEs'
+  dates: 2018 - ongoing
+  qualification: associated doctoral student
+  #quote: >
+- layout: top
+  name: University of Vienna
+  dates: 2016 - 2018
+  qualification: MSc Physics, MSc Mathematics, MA Philosophy
+  #quote: >
+  # description: | # this will include new lines to allow paragraphs
+- layout: top
+  name: University of Vienna
+  dates: 2013 - 2016
+  qualification: BSc Physics, BA Philosophy
+  #quote: >

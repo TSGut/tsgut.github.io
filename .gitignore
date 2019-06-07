@@ -1,0 +1,4 @@
+# Specifies intentionally untracked files to ignore
+
+# KDE / Kubuntu directory preferences
+.directory
