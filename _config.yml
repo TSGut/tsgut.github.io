@@ -26,7 +26,7 @@ about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   I am a PhD student of applied mathematics at Imperial College London, with a background in mathematics, physics and philosophy. I am also an associated student of the doctoral program “Dissipation and Dispersion in Nonlinear PDEs” through the University of Vienna.
 
-  My research focus is on numerical analysis and the development of computational tools for PDEs, integral equations and fractional differential equations.
+  My research focus is on numerical analysis and the development of computational tools for PDEs, integral equations and fractional differential equations with an eye on applications in the natural sciences such as relativistic quantum mechanics.
 
 # Projects Section
 # projects_title: Projects
