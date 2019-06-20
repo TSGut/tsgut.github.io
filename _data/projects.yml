@@ -15,7 +15,7 @@
   #
   description: | # this will include new lines to allow paragraphs
     Spectral methods are numerical methods which achieve exponential convergence through the use of appropriate bases (such as orthogonal polynomials). When set up correctly, one obtains sparse linear systems which can be solved with high efficiency.
-    - T. S. Gutleb & S. Olver (2019), [A sparse spectral method for Volterra integral equations using orthogonal polynomials on the triangle](https://arxiv.org/abs/1906.03907), arXiv:1906.03907
+    - T. S. Gutleb & [S. Olver](http://wwwf.imperial.ac.uk/~solver/) (2019), [A sparse spectral method for Volterra integral equations using orthogonal polynomials on the triangle](https://arxiv.org/abs/1906.03907), arXiv:1906.03907
 
 - layout: top
   name: Numerics for relativistic Schrödinger-type equations
