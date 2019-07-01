@@ -35,8 +35,8 @@ about_content: | # this will include new lines to allow paragraphs
 more_title: Conference talks
 more_content: | # this will include new lines to allow paragraphs
   <p></p>
-   - "A sparse spectral method for Volterra integral equations" <sup>[[slides]](https://github.com/TSGut/tsgut.github.io/raw/master/_files/Gutleb_NACONF2019_SparseSpectralVolterra_slides.pdf)</sup>, Spectral Methods minisymposium, [28th Biennial Numerical Analysis Conference](https://numericalanalysisconference.org.uk/meetings/2019/minisymposia), Glasgow 2019
-   - “[BProbeM](https://github.com/TSGut/BProbeM): a tool to measure matrix geometries” <sup>[[slides]](https://github.com/TSGut/tsgut.github.io/raw/master/_files/Gutleb_ESI_workshop_BProbeM_slides.pdf)</sup>, ESI Workshop: [Matrix Models for Noncommutative Geometry and String Theory](https://homepage.univie.ac.at/harold.steinacker/MM-ESI-homepage/index.html), Vienna 2018
+   - "A sparse spectral method for Volterra integral equations"<sup>[[pdf]](https://github.com/TSGut/tsgut.github.io/raw/master/_files/Gutleb_NACONF2019_SparseSpectralVolterra_slides.pdf)</sup>, Spectral Methods minisymposium, [28th Biennial Numerical Analysis Conference](https://numericalanalysisconference.org.uk/meetings/2019/minisymposia), Glasgow 2019
+   - “[BProbeM](https://github.com/TSGut/BProbeM): a tool to measure matrix geometries”<sup>[[pdf]](https://github.com/TSGut/tsgut.github.io/raw/master/_files/Gutleb_ESI_workshop_BProbeM_slides.pdf)</sup>, ESI Workshop: [Matrix Models for Noncommutative Geometry and String Theory](https://homepage.univie.ac.at/harold.steinacker/MM-ESI-homepage/index.html), Vienna 2018
 
   <h3>Teaching</h3>
   - Student tutor for Analysis 1 and 2 for Physicists, first year undergraduate calculus courses [(2015-2018)](https://ufind.univie.ac.at/en/person.html?id=59491&teaching=true), University of Vienna
