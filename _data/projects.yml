@@ -1,11 +1,12 @@
 - layout: top
-  name: Numerics for fractional differential equations
+  name: Numerics for equilibrium measures
   #link: github.com/sproogen
   #github: sproogen/resume-theme
   #quote: >
   #
   description: | # this will include new lines to allow paragraphs
-    Soon.
+    Equilibrium measure problems appear, e.g. in the continuous mean-field limit of particle systems and thus have various applications ranging from the description of swarming and flocking behavior in animals and cells to self-assembly properties of particle systems. 
+    <hr>
 
 - layout: top
   name: Spectral methods for integral equations
@@ -14,14 +15,20 @@
   #quote: >
   #
   description: | # this will include new lines to allow paragraphs
-    Spectral methods are numerical methods which achieve exponential convergence through the use of appropriate bases (such as orthogonal polynomials). When set up correctly, one obtains sparse linear systems which can be solved with high efficiency.
-    - T. S. Gutleb & [S. Olver](http://wwwf.imperial.ac.uk/~solver/) (2019), [A sparse spectral method for Volterra integral equations using orthogonal polynomials on the triangle](https://arxiv.org/abs/1906.03907), arXiv:1906.03907
-
+   <img align="right" src="https://tsgut.github.io/images/2ndkind-K2-1.png" width="200"/>Spectral methods are numerical methods which achieve exponential convergence through the use of appropriate approximation bases (such as orthogonal polynomials). When set up correctly, one obtains banded sparse linear systems which can be solved with high efficiency. I have worked towards using such methods to solve linear and nonlinear integral and integro-differential equations which have applications in the natural sciences and finance.
+    <hr>- <p><b> <font size="+1">A fast sparse spectral method for nonlinear integro-differential Volterra equations with general kernels  </font></b></p>
+    T. S. Gutleb , 2020. <a href="https://arxiv.org/abs/2005.06081" target="_blank"><img src="http://img.shields.io/badge/arXiv%3A2005.06081-B31B1B.svg"/></a>
+    <hr>- <p><b> <font size="+1">A sparse spectral method for Volterra integral equations using orthogonal polynomials on the triangle</font></b></p>
+    T. S. Gutleb , <a href="http://wwwf.imperial.ac.uk/~solver/" target="_blank">S. Olver </a> , 2019. <a href="https://arxiv.org/abs/1906.03907" target="_blank"><img src="http://img.shields.io/badge/arXiv%3A1906.03907-B31B1B.svg"/></a>
+    <hr>
 - layout: top
-  name: Numerics for relativistic Schrödinger-type equations
+  name: Splitting methods for relativistic Schrödinger-type equations
   #link: github.com/sproogen
   #github: sproogen/resume-theme
   #quote: >
   #
   description: | # this will include new lines to allow paragraphs
-    Relativistic variants of the Schrödinger equation such as the Pauli, Dirac and Klein-Gordon equations are used to model the behavior of particles moving at high velocities. When coupled to electromagnetic equations such as the Maxwell equations, these PDEs describing fermion and boson behavior are a challenge to solve numerically in the appropriate 3D context, even with benign assumptions on the potentials and boundaries. I work with the group at the Wolfgang Pauli Insitute and the Vienna Doctoral Program 'Dissipation and Dispersion in Nonlinear PDEs' to try and tackle these challenges both in modeling and in implementation.
+    <img align="right" src="https://tsgut.github.io/images/spinstates.gif" width="200"/>Relativistic variants of the Schrödinger equation such as the Pauli, Dirac and Klein-Gordon equations are used to model the behavior of particles moving at high velocities. When coupled to electromagnetic equations such as the Maxwell equations, these PDEs describing fermion and boson behavior are a challenge to solve numerically in the appropriate 3D context, even with benign assumptions on the potentials and boundaries. Lie and Strang splitting methods are a canonical approach to the numerical treatment of non-relativistic scalar Schrödinger equations - I have worked towards extending these methods to relativistic equations accounting for spin.
+    <hr>- <p><b> <font size="+1">A time splitting method for the three-dimensional linear Pauli equation</font></b></p>
+    T. S. Gutleb , <a href="https://www.wpi.ac.at/director.html" target="_blank">N. J. Mauser</a> , <a href="https://www.asc.tuwien.ac.at/~mruggeri/" target="_blank">M. Ruggeri</a> , <a href="https://homepage.univie.ac.at/hans.peter.stimming/" target="_blank">HP. Stimming</a> , 2020. <a href="https://arxiv.org/abs/2005.06072" target="_blank"><img src="http://img.shields.io/badge/arXiv%3A2005.06072-B31B1B.svg"/></a>
+    <hr>
