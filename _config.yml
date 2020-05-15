@@ -11,14 +11,20 @@ email: timon.gutleb@gmail.com
 # Social links
 twitter_username: TimonGutleb
 github_username:  TSGut
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-# instagram_username: chillwildlife
+# dribbble_username: 
+# facebook_username: 
+# flickr_username: 
+# instagram_username:
 linkedin_username: gutleb
-# pinterest_username: jekyll
-# youtube_username: globalmtb
-# googleplus_username: +jekyll
+# pinterest_username: 
+# youtube_username:
+# googleplus_username:
+# orcid_username: 0000-0002-8239-2372
+
+additional_links:
+- title: Google Scholar link
+  icon: fa-google
+  url: https://scholar.google.com/citations?hl=en&user=4uZ9qhIAAAAJ
 
 # About Section
 about_title:
