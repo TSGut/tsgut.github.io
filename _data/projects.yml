@@ -18,8 +18,8 @@
    <img align="right" src="https://tsgut.github.io/images/2ndkind-K2-1.png" width="200"/>Spectral methods are numerical methods which achieve exponential convergence through the use of appropriate approximation bases (such as orthogonal polynomials). When set up correctly, one obtains banded sparse linear systems which can be solved with high efficiency. I have worked towards using such methods to solve linear and nonlinear integral and integro-differential equations which have applications in the natural sciences and finance.
     <hr>- <p><b> <font size="+1">A fast sparse spectral method for nonlinear integro-differential Volterra equations with general kernels  </font></b></p>
     T. S. Gutleb , 2020. <a href="https://arxiv.org/abs/2005.06081" target="_blank"><img src="https://img.shields.io/badge/arXiv%3A2005.06081-B31B1B.svg"/></a>
-    <hr>- <p><b> <font size="+1">A sparse spectral method for Volterra integral equations using orthogonal polynomials on the triangle</font></b></p>
-    T. S. Gutleb , <a href="https://wwwf.imperial.ac.uk/~solver/" target="_blank">S. Olver </a> , 2019. <a href="https://arxiv.org/abs/1906.03907" target="_blank"><img src="https://img.shields.io/badge/arXiv%3A1906.03907-B31B1B.svg"/></a>
+    <hr>- <p><b> <font size="+1">A Sparse Spectral Method for Volterra Integral Equations Using Orthogonal Polynomials on the Triangle</font></b></p>
+    T. S. Gutleb , <a href="https://wwwf.imperial.ac.uk/~solver/" target="_blank">S. Olver </a> , 2019. <a href="https://epubs.siam.org/doi/10.1137/19M1267441" target="_blank"><img src="https://img.shields.io/badge/SIAM_J._Numer._Anal.-0900C5.svg"/></a> <a href="https://wwwf.imperial.ac.uk/~solver/" target="_blank"> <a href="https://arxiv.org/abs/1906.03907" target="_blank"><img src="https://img.shields.io/badge/arXiv%3A1906.03907-B31B1B.svg"/></a>
     <hr>
 - layout: top
   name: Splitting methods for relativistic Schrödinger-type equations
