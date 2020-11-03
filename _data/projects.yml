@@ -5,8 +5,8 @@
   #quote: >
   #
   description: | # this will include new lines to allow paragraphs
-    Equilibrium measure problems appear, e.g. in the continuous mean-field limit of particle systems and thus have various applications ranging from the description of swarming and flocking behavior in animals and cells to self-assembly properties of particle systems. 
-        <hr>- <p><b> <font size="+1">Computing Equilibrium Measures with Power Law Kernels  </font></b></p>
+    <img align="right" src="https://tsgut.github.io/images/a4-b145_no_gap.gif" width="200"/>Equilibrium measure problems appear, e.g. in the continuous mean-field limit of particle systems and thus have various applications ranging from the description of swarming and flocking behavior in animals and cells to self-assembly properties of particle systems. 
+    <hr>- <p><b> <font size="+1">Computing Equilibrium Measures with Power Law Kernels  </font></b></p>
     T. S. Gutleb , <a href="https://www.maths.ox.ac.uk/people/jose.carrillodelaplata">J. A. Carrillo </a> , <a href="https://wwwf.imperial.ac.uk/~solver/" target="_blank">S. Olver </a> 2020. <a href="https://arxiv.org/abs/2011.00045" target="_blank"><img src="https://img.shields.io/badge/arXiv%3A2011.00045-B31B1B.svg"/></a>
 
 - layout: top
