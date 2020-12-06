@@ -1,12 +1,22 @@
 # Site
-repository: sproogen/resume-theme
-# favicon: images/favicon.ico
+repository: #Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+
+# Content configuration version
+version: 2
 
 # Personal info
 name: Timon S. Gutleb
 title: PhD student in applied mathematics
 email: timon.gutleb@gmail.com
-# website: www.github.com/sproogen/resume-theme
+# email_title: Email (Email title override)
+#phone: Your phone number (optional)
+# phone_title: Phone (Phone title override)
+#website: Your website (eg. https://google.com)(optional)
+# website_title: Web (Website title override)
+
+# Dark Mode (true/false/never)
+darkmode: false
 
 # Social links
 twitter_username: TimonGutleb
@@ -16,15 +26,24 @@ github_username:  TSGut
 # flickr_username: 
 # instagram_username:
 linkedin_username: gutleb
-# pinterest_username: 
-# youtube_username:
-# googleplus_username:
-# orcid_username: 0000-0002-8239-2372
+#stackoverflow_username: "00000001"
+#xing_username: jekyll
+#pinterest_username: jekyll
+#youtube_username: jekyll
+#googleplus_username: +jekyll
+orcid_username: 0000-0002-8239-2372
 
+# Additional icon links
 additional_links:
 - title: Google Scholar link
-  icon: fa-google
+  icon: fab fa-google
   url: https://scholar.google.com/citations?hl=en&user=4uZ9qhIAAAAJ
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
 
 # About Section
 about_title:
@@ -32,42 +51,101 @@ about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   I am a PhD student of applied mathematics at Imperial College London, with a background in mathematics, physics and philosophy. I am also an associated student of the doctoral program “Dissipation and Dispersion in Nonlinear PDEs” through the University of Vienna.
 
-  My research focus is on numerical analysis and the development of computational tools for PDEs, integral equations and fractional differential equations with an eye on applications in the natural sciences such as relativistic quantum mechanics.
+  My research focus is on numerical analysis and the development of computational tools for integral equations, PDEs and fractional differential equations with an eye on applications in the natural sciences.
 
-# Projects Section
-# projects_title: Projects
+content:
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top
+        title: Numerics for Equilibrium Measures
+        description: | # this will include new lines to allow paragraphs
+          <img align="right" src="https://tsgut.github.io/images/a4-b145_no_gap.gif" width="200"/>Equilibrium measure problems appear, e.g. in the continuous mean-field limit of particle systems and thus have various applications ranging from the description of swarming and flocking behavior in animals and cells to self-assembly properties of particle systems. 
+          <hr>
+          - <p><b> <font size="+1">Computing Equilibrium Measures with Power Law Kernels  </font></b></p>
+           T. S. Gutleb , <a href="https://www.maths.ox.ac.uk/people/jose.carrillodelaplata">J. A. Carrillo </a> , <a href="https://wwwf.imperial.ac.uk/~solver/" target="_blank">S. Olver </a> 2020. <a href="https://arxiv.org/abs/2011.00045" target="_blank"><img src="https://img.shields.io/badge/arXiv%3A2011.00045-B31B1B.svg"/></a>
+           
+           <hr>
+      - layout: top
+        title: Spectral methods for integral equations
+        description: | # this will include new lines to allow paragraphs
+          <img align="right" src="https://tsgut.github.io/images/2ndkind-K2-1.png" width="200"/>Spectral methods are numerical methods which achieve exponential convergence through the use of appropriate approximation bases such as orthogonal polynomials. When set up correctly, one obtains banded sparse linear systems which can be solved with high efficiency. I have worked towards using such methods to solve linear and nonlinear integral and integro-differential equations which have applications in the natural sciences and finance.
+          <hr>
+          - <p><b> <font size="+1">A Fast Sparse Spectral Method for Nonlinear Integro-differential Volterra Equations with General Kernels  </font></b></p>
+          T. S. Gutleb , 2020. <a href="https://arxiv.org/abs/2005.06081" target="_blank"><img src="https://img.shields.io/badge/arXiv%3A2005.06081-B31B1B.svg"/></a>
+          <hr>
+          - <p><b> <font size="+1">A Sparse Spectral Method for Volterra Integral Equations Using Orthogonal Polynomials on the Triangle</font></b></p>
+          T. S. Gutleb , <a href="https://wwwf.imperial.ac.uk/~solver/" target="_blank">S. Olver </a> , 2019. <a href="https://epubs.siam.org/doi/10.1137/19M1267441" target="_blank"><img src="https://img.shields.io/badge/SIAM_J._Numer._Anal.-0900C5.svg"/></a> <a href="https://wwwf.imperial.ac.uk/~solver/" target="_blank"> <a href="https://arxiv.org/abs/1906.03907" target="_blank"><img src="https://img.shields.io/badge/arXiv%3A1906.03907-B31B1B.svg"/></a>
+          <hr>
+      - layout: top
+        title: Splitting methods for relativistic Schrödinger-type equations
+        description: | # this will include new lines to allow paragraphs
+          <img align="right" src="https://tsgut.github.io/images/spinstates.gif" width="200"/>Relativistic variants of the Schrödinger equation such as the Pauli, Dirac and Klein-Gordon equations are used to model the behavior of particles moving at high velocities. When coupled to electromagnetic equations such as the Maxwell equations, these PDEs describing fermion and boson behavior are a challenge to solve numerically in the appropriate 3D context, even with benign assumptions on the potentials and boundaries. Lie and Strang splitting methods are a canonical approach to the numerical treatment of non-relativistic scalar Schrödinger equations - I have worked towards extending these methods to relativistic equations accounting for spin.
+          <hr>
+          - <p><b> <font size="+1">A time splitting method for the three-dimensional linear Pauli equation</font></b></p>
+          T. S. Gutleb , <a href="https://www.wpi.ac.at/director.html" target="_blank">N. J. Mauser</a> , <a href="https://www.asc.tuwien.ac.at/~mruggeri/" target="_blank">M. Ruggeri</a> , <a href="https://homepage.univie.ac.at/hans.peter.stimming/" target="_blank">HP. Stimming</a> , 2020. <a href="https://arxiv.org/abs/2005.06072" target="_blank"><img src="https://img.shields.io/badge/arXiv%3A2005.06072-B31B1B.svg"/></a>
+          <hr>
+  - title: Activities
+    layout: list
+    content:
+      - layout: top
+        description: | # this will include new lines to allow paragraphs
+          <h2>Conference talks</h2>
+          - 'Computing Equilibrium Measures with Power Law Kernels', <a href="https://winter20.cms.math.ca/" target="_blank">CMS 2020 Winter Meeting</a>, Canada 2020. <a href="https://github.com/TSGut/tsgut.github.io/raw/master/_files/Gutleb_CMS2020Winter_slides.odp" target="_blank"><img src="https://img.shields.io/badge/slides-228B22.svg"/></a>
+          - 'Applications of Riemann-Liouville fractional integrals in the computation of equilibrium measures with power law kernels', <a href="http://www.csrc.ac.cn/en/event/workshop/2020-01-10/103.html" target="_blank">4th Conference on Numerical Methods for Fractional-Derivative Problems</a>, Beijing 2020.
+          - 'A sparse spectral method for Volterra integral equations using orthogonal polynomials on the triangle', <a href="https://www.asc.tuwien.ac.at/rmmm2019/?open=program" target="_blank">RMMM 2019</a>, Vienna 2019.
+          - 'A sparse spectral method for Volterra integral equations', <a href="https://numericalanalysisconference.org.uk/meetings/2019/minisymposia" target="_blank">28th Biennial Numerical Analysis Conference</a>, Glasgow 2019. <a href="https://github.com/TSGut/tsgut.github.io/raw/master/_files/Gutleb_NACONF2019_SparseSpectralVolterra_slides.pdf" target="_blank"><img src="https://img.shields.io/badge/slides-228B22.svg"/></a>
+          - '<a href="https://github.com/TSGut/BProbeM" target="_blank">BProbeM</a>: a tool to measure matrix geometries', <a href="https://homepage.univie.ac.at/harold.steinacker/MM-ESI-homepage/index.html" target="_blank">Matrix Models for Noncommutative Geometry and String Theory</a>, Vienna 2018. <a href="https://github.com/TSGut/tsgut.github.io/raw/master/_files/Gutleb_ESI_workshop_BProbeM_slides.pdf" target="_blank"><img src="https://img.shields.io/badge/slides-228B22.svg"/></a>
+          <h2>Event Organizing</h2>
+          - Organizer for the 'Numerics of Schrödinger equations' minisymposium at <a href="https://www.asc.tuwien.ac.at/cmam2020/?open=minisymposia" target="_blank">CMAM-9 (2020)</a> with Hans-Peter Stimming.
+          - <a href="https://www.damtp.cam.ac.uk/user/mjc249/home.html" target="_blank">Matthew Colbrook</a> and I are organizing a <a href="https://www.damtp.cam.ac.uk/seminars/cambridge-imperial-phds/" target="_blank">joint PhD seminar series (CICS)</a> between the University of Cambridge and Imperial College London centered around computational mathematics. Twice per term the seminar features PhD student talks from both departments as well as an invited plenary speaker.
+          <h2>Teaching</h2>
+          - Student tutor for Analysis 1 and 2 for Physicists, first year undergraduate calculus courses <a href="https://ufind.univie.ac.at/en/person.html?id=59491&teaching=true" target="_blank">(2015-2018)</a>, University of Vienna
+          <h2>Scientific Outreach and Volunteering</h2>
+          - Volunteer work for <a href="https://paleorxiv.github.io/" target="_blank">paleoarxiv</a> and the <a href="https://phylogenyexplorerproject.com/" target="_blank">Phylogeny Explorer</a> project (2018-2019)
+          - Exhibition guide for the Austrian Academy of Sciences exhibit in celebration of 100 years of general relativity (2015)
+          - Translator English → German for various educational platforms such as coursera.org and TED Talks (2015-2016)
+          <h2>Some open science projects I want to share</h2>
+          - The <a href="https://oeis.org/" target="_blank">On-Line Encyclopedia of Integer Sequences</a> (OEIS) is brilliant and incredibly useful for exploratory work in numerical analysis. I have tried to give back to it when and where possible (e.g. <a href="https://oeis.org/A334588" target="_blank">A334588</a>) and hope you will consider doing so as well!
+          - <a href="https://www.primegrid.com/"  target="_blank">PrimeGrid</a> is a BOINC-based volunteer distributed computing project which searches for prime numbers of various sizes and with various interesting properties. The largest <a href="https://en.wikipedia.org/wiki/Primes_in_arithmetic_progression" target="_blank">AP-k</a> my computers have found so far has been <a href="https://www.primegrid.com/ap.php?userid=999250" target="_blank">my AP-27 of length 21</a> in 2018 - perhaps your devices will be luckier? 
+          - I also share computing power with the BOINC-based distributed computing project <a href="https://boinc.bakerlab.org/rosetta/" target="_blank">Rosetta@home</a>, which works towards designing new proteins and predicting their 3-dimensional shapes, with potential biomedical applications.
+  - title: Education
+    layout: list
+    content:
+      - layout: top
+        title: Imperial College London
+        caption: 2018 - ongoing
+        sub_title: PhD student applied mathematics
+        #quote: >
+      - layout: top
+        title: Vienna Doctoral Program 'Dissipation and Dispersion in Nonlinear PDEs'
+        caption: 2018 - ongoing
+        sub_title: associated doctoral student
+        #quote: >
+      - layout: top
+        title: University of Vienna
+        caption: 2016 - 2018
+        sub_title: MSc Physics, MSc Mathematics, MA Philosophy
+        #quote: >
+        # description: | # this will include new lines to allow paragraphs
+      - layout: top
+        title: University of Vienna
+        caption: 2013 - 2016
+        sub_title: BSc Physics, BA Philosophy
+  #- title: A Little More About Me
+   # layout: text
+    #content: | # this will include new lines to allow paragraphs
+     # This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
 
-# More Section
-more_title: Activities
-more_content: | # this will include new lines to allow paragraphs
-  <h2>Conference talks</h2>
-     - 'Applications of Riemann-Liouville fractional integrals in the computation of equilibrium measures with power law kernels', <a href="http://www.csrc.ac.cn/en/event/workshop/2020-01-10/103.html" target="_blank">4th Conference on Numerical Methods for Fractional-Derivative Problems</a>, Beijing 2020.
-   - 'A sparse spectral method for Volterra integral equations using orthogonal polynomials on the triangle', <a href="https://www.asc.tuwien.ac.at/rmmm2019/?open=program" target="_blank">RMMM 2019</a>, Vienna 2019.
-   - 'A sparse spectral method for Volterra integral equations', <a href="https://numericalanalysisconference.org.uk/meetings/2019/minisymposia" target="_blank">28th Biennial Numerical Analysis Conference</a>, Glasgow 2019. <a href="https://github.com/TSGut/tsgut.github.io/raw/master/_files/Gutleb_NACONF2019_SparseSpectralVolterra_slides.pdf" target="_blank"><img src="https://img.shields.io/badge/slides-228B22.svg"/></a>
-   - '<a href="https://github.com/TSGut/BProbeM" target="_blank">BProbeM</a>: a tool to measure matrix geometries', <a href="https://homepage.univie.ac.at/harold.steinacker/MM-ESI-homepage/index.html" target="_blank">Matrix Models for Noncommutative Geometry and String Theory</a>, Vienna 2018. <a href="https://github.com/TSGut/tsgut.github.io/raw/master/_files/Gutleb_ESI_workshop_BProbeM_slides.pdf" target="_blank"><img src="https://img.shields.io/badge/slides-228B22.svg"/></a>
-
-  <h2>Event Organizing</h2>
-  - Organizer for the 'Numerics of Schrödinger equations' minisymposium at <a href="https://www.asc.tuwien.ac.at/cmam2020/?open=minisymposia" target="_blank">CMAM-9 (2020)</a> with Hans-Peter Stimming.
-  - <a href="https://www.damtp.cam.ac.uk/user/mjc249/home.html" target="_blank">Matthew Colbrook</a> and I are organizing a <a href="https://www.damtp.cam.ac.uk/seminars/cambridge-imperial-phds/" target="_blank">joint PhD seminar series (CICS)</a> between the University of Cambridge and Imperial College London centered around computational mathematics. Twice per term the seminar features PhD student talks from both departments as well as an invited plenary speaker.
-  <h2>Teaching</h2>
-  - Student tutor for Analysis 1 and 2 for Physicists, first year undergraduate calculus courses <a href="https://ufind.univie.ac.at/en/person.html?id=59491&teaching=true" target="_blank">(2015-2018)</a>, University of Vienna
-  <h2>Scientific Outreach and Volunteering</h2>
-  - Volunteer work for <a href="https://paleorxiv.github.io/" target="_blank">paleoarxiv</a> and the <a href="https://phylogenyexplorerproject.com/" target="_blank">Phylogeny Explorer</a> project (2018-2019)
-  - Exhibition guide for the Austrian Academy of Sciences exhibit in celebration of 100 years of general relativity (2015)
-  - Translator English → German for various educational platforms such as coursera.org and TED Talks (2015-2016)
-  <h2>Some open science projects I want to share</h2>
-    - The <a href="https://oeis.org/" target="_blank">On-Line Encyclopedia of Integer Sequences</a> (OEIS) is brilliant and incredibly useful for exploratory work in numerical analysis. I have tried to give back to it when and where possible (e.g. <a href="https://oeis.org/A334588" target="_blank">A334588</a>) and hope you will consider doing so as well!
-    - <a href="https://www.primegrid.com/"  target="_blank">PrimeGrid</a> is a BOINC-based volunteer distributed computing project which searches for prime numbers of various sizes and with various interesting properties. The largest <a href="https://en.wikipedia.org/wiki/Primes_in_arithmetic_progression" target="_blank">AP-k</a> my computers have found so far has been <a href="https://www.primegrid.com/ap.php?userid=999250" target="_blank">my AP-27 of length 21</a> in 2018 - perhaps your devices will be luckier? 
-    - I also share computing power with the BOINC-based distributed computing project <a href="https://boinc.bakerlab.org/rosetta/" target="_blank">Rosetta@home</a>, which works towards designing new proteins and predicting their 3-dimensional shapes, with potential biomedical applications.
-
-# Education Section
-# educaton_title: Education
+      #Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
 
 # Footer
-footer_show_references: true
+footer_show_references: false
+references_title:
 
 # Build settings
-remote_theme: sproogen/resume-theme
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
 
 sass:
   sass_dir: _sass
@@ -75,3 +153,16 @@ sass:
 
 plugins:
  - jekyll-seo-tag
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]
