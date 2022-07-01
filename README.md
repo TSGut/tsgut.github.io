@@ -1,1 +1,3 @@
-This repo hosts my personal website, based on the template at https://github.com/sproogen/modern-resume-theme
+Personal website at [timon.gutleb.com](timon.gutleb.com).
+
+Based on a Creatice Commons [HTML5UP](https://html5up.net/) template.
