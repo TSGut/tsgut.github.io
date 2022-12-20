@@ -1949,7 +1949,7 @@ input, select, textarea {
 			input[type="radio"] + label:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
+				font-family: ForkAwesome;
 				font-style: normal;
 				font-weight: normal;
 				text-transform: none !important;
@@ -2049,7 +2049,7 @@ input, select, textarea {
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome, Academicons;
+			font-family: ForkAwesome, Academicons;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -2391,7 +2391,7 @@ input, select, textarea {
 
 	ul.pdf-list li:before {
 		text-decoration: none;
-		font-family: FontAwesome;
+		font-family: ForkAwesome;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 1.5em;
@@ -2418,7 +2418,7 @@ input, select, textarea {
 			ul.feature-icons li:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
+				font-family: ForkAwesome;
 				font-style: normal;
 				font-weight: normal;
 				text-transform: none !important;
@@ -3124,7 +3124,7 @@ input, select, textarea {
 					#titleBar .toggle:before {
 						-moz-osx-font-smoothing: grayscale;
 						-webkit-font-smoothing: antialiased;
-						font-family: FontAwesome;
+						font-family: ForkAwesome;
 						font-style: normal;
 						font-weight: normal;
 						text-transform: none !important;
