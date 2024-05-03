@@ -2836,7 +2836,7 @@ input, select, textarea {
 						-ms-transition: none;
 						transition: none;
 						border: 0;
-						color: #ffffff !important;
+						color: #ffffff;
 						display: block;
 						padding: 0.85em 0;
 						text-decoration: none;
@@ -2873,7 +2873,7 @@ input, select, textarea {
 
 	#main > section {
 		/*border-top: solid 10px #f4f4f4;*/
-		border-bottom: solid 10px #f4f4f4;
+		border-bottom: solid 10px #1a1f47;
 	}
 
 		#main > section > .container {
@@ -3387,3 +3387,5 @@ input, select, textarea {
 			}
 
 	}
+
+	
