@@ -124,7 +124,7 @@
 		// Title Bar.
 			$titleBar = $(
 				'<div id="titleBar">' +
-					'<a href="#header" class="toggle"></a>' +
+					'<a href="#header" class="toggle" alt="Toggle navigation sidebar" title="Toggle navigation sidebar"></a>' +
 					'<span class="title">' + $('#logo').html() + '</span>' +
 				'</div>'
 			)
@@ -198,11 +198,11 @@ darkModeToggle.addEventListener('click', () => {
 //in the footer, just make sure the button is inside the footer tag, and it will be
 //linked to this function.
 
-    darkModeToggleFooter.addEventListener('click', () => {
-        darkMode = localStorage.getItem("darkMode");
-        if (darkMode !== "enabled") {
-            enableDarkMode();
-        } else {
-            disableDarkMode();
-        }
-    })
+//    darkModeToggleFooter.addEventListener('click', () => {
+//        darkMode = localStorage.getItem("darkMode");
+//        if (darkMode !== "enabled") {
+//            enableDarkMode();
+//        } else {
+//            disableDarkMode();
+//        }
+//    })
