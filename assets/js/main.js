@@ -103,12 +103,12 @@
 
   // Title Bar.
   $titleBar = $(
-    '<div id="titleBar">' +
+    '<nav id="titleBar">' +
       '<a href="#header" class="toggle" alt="Toggle navigation sidebar" title="Toggle navigation sidebar"></a>' +
       '<span class="title">' +
       $("#logo").html() +
       "</span>" +
-      "</div>"
+      "</nav>"
   ).appendTo($body);
 
   // Panel.
