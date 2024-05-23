@@ -1,5 +1,6 @@
 /*CSS for Dark Mode Toggle
 
+Useage:
 Copy and paste this code into it's own dark.css file. Keep all you dark mode
 styles there, and make sure when you link to this sheet in your html head,
 make it the bottom css link tag so it overrides all other styles.
@@ -14,7 +15,6 @@ Scroll to the bottom to start adding your dark mode styles
 
 */
 
-/* note that Internet Explorer does not support css variables */
 :root {
     --dark: #000;
     --medium: #1b1b1b;
@@ -116,7 +116,7 @@ body.dark-mode .dark-toggle {
     background: -o-linear-gradient(left, #000 0%, #000 100%);
     background: -webkit-gradient(linear, left top, right top, from(#000), to(#000));
     background: linear-gradient(90deg, #000 0%, #000 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#43b7ff",endColorstr="#00ddf6",GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#43b7ff", endColorstr="#00ddf6", GradientType=1);
     border: none;
 }
 
@@ -130,8 +130,8 @@ body.dark-mode .dark-toggle {
     -webkit-transition: .3s ease;
     -o-transition: .3s ease;
     transition: .3s ease;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 body.dark-mode .dark-toggle span {
@@ -169,15 +169,19 @@ body.dark-mode em {
 body.dark-mode h1 {
     color: #fff
 }
+
 body.dark-mode h2 {
     color: #fff
 }
+
 body.dark-mode h2 {
     color: #fff
 }
+
 body.dark-mode h3 {
     color: #fff
 }
+
 body.dark-mode h4 {
     color: #fff
 }
@@ -186,12 +190,12 @@ body.dark-mode li {
     color: #fff
 }
 
-body.dark-mode #header > nav ul li a.active {
+body.dark-mode #header>nav ul li a.active {
     background: #000000;
     color: #fff !important;
 }
 
-body.dark-mode #header > nav ul li a:hover {
+body.dark-mode #header>nav ul li a:hover {
     background: #000000;
     color: #fff !important;
 }
@@ -202,6 +206,6 @@ body.dark-mode #header {
 }
 
 .fa-sun-o {
-    position:relative;
-    top:+3px;
+    position: relative;
+    top: +3px;
 }
