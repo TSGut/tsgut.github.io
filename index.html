@@ -23,11 +23,12 @@
 			<div align="center" class="image avatar"><img src="images/profile.png" alt="Picture of Timon S. Gutleb." />
 			</div>
 			<h1 id="logo">Timon S. Gutleb</h1>
-			<h5>PIMS-Simons Postdoctoral Fellow</h5>
+			<h5>PIMS-Simons Postdoc</h5>
 		</header>
 		<nav id="nav">
 			<ul>
 				<li><a href="#about" class="active">About</a></li>
+				<li><a href="#research">Research</a></li>
 				<li><a href="#papers">Publications</a></li>
 				<li><a href="#talks">Selected Talks</a></li>
 				<li><a href="#teaching">Teaching</a></li>
@@ -86,6 +87,68 @@
 				</div>
 			</section>
 
+			<section id="research">
+				<div class="container">
+				<h2>Research</h2>
+				<p>The following is a non-exhaustive list of things I have worked on and am currently interested in.</p>
+				<div class="features">
+					<article>
+						<img class="image" style="padding-top:30px;" src="images/GrapheneSpin.gif"
+							alt="Dirac cones in the conduction and valence bands of graphene reconstructed from smooth interpolants by learning invariants instead of the surfaces themselves."
+							title="Dirac cones in the conduction and valence bands of graphene reconstructed from smooth interpolants by learning invariants instead of the surfaces themselves." />
+						<div class="inner">
+							<h4>Machine learning conical intersections</h4>
+							<p align="left">Conical intersections in play crucial roles in determining the dynamics of molecules and materials upon light excitation, molecular orbitals and material band structure. 
+								In the relevant context of high-dimensional non-smooth hyper-surfaces, common machine learning models perform poorly.</p>
+								<p align="left">
+								I have worked on overcoming these issues by learning globally smooth invariant quantities from which the desired conical intersections can be reconstructed accurately.</p>
+						</div>
+						<p></p>
+					</article>
+					<article>
+						<img class="image" style="padding-top:30px;" src="images/alalala-molsim.gif"
+							alt="Molecular dynamics simulation of an Ala-Ala-Ala molecule (C₉H₁₇N₃O₄)."
+							title="Molecular dynamics simulation of an Ala-Ala-Ala molecule (C₉H₁₇N₃O₄)." />
+						<div class="inner">
+							<h4>Machine learning of interaction models</h4>
+							<p align="left">Many physical and biological systems can be accurately modeled using
+								atomistic many body interactions. Machine learning based methods allow one to infer
+								succesful models for otherwise prohibitively large and complex systems. </p>
+							<p align="left">
+								I work on novel methodologies and applications of such frameworks as well as the
+								closely related problem of analyzing their theoretical foundations.</p>
+						</div>
+						<p></p>
+					</article>
+					<article>
+						<img class="image" style="padding-top:30px;" src="images/timefractionaldampeningwave.gif"
+							alt="Wave equation on a disk dampened by a time-fractional Caputo derivative term."
+							title="Wave equation on a disk dampened by a time-fractional Caputo derivative term." />
+						<div class="inner">
+							<h4>Fractional Differential Equations</h4>
+							<p align="left">Fractional differential equations generalize ODEs and PDEs to include
+								derivative operators of non-integer order. The resulting operators are generally
+								nonlocal and thus pose several challenges to conventional numerical approaches. </p>
+							<p align="left"> Fractional derivatives and closely related objects such as Riesz potentials appear in applications featuring memory
+								effects, e.g. photoacoustic imaging in medical physics or in the continuous limit of classical particle swarms.</p>
+						</div>
+						<p></p>
+					</article>
+					<article>
+						<img class="image" style="padding-top:30px;" src="images/forced-helmholtz-rho-0-5.png"
+							alt="Numerical solution to an inhomogeneous Helmholtz equation with k = 80 and right-hand side f(x,y) = sin(100x) on an annular domain with inner radius 0.5."
+							title="Numerical solution to an inhomogeneous Helmholtz equation with k = 80 and right-hand side f(x,y) = sin(100x) on an annular domain with inner radius 0.5." />
+						<div class="inner">
+							<h4>Orthogonal Polynomials and Spectral Methods</h4>
+							<p align="left">Orthogonal polynomials can be used to accurately and efficiently
+								approximate functions.</p>
+							<p align="left"> With appropriate orthogonal polynomials for a given domain and weight function in hand one can construct quadrature methods as well as spectral methods for solving integral and partial differential equations with
+								sparse discretisations and spectral convergence.</p>
+						</div>
+						<p></p>
+					</article></div>
+			</section>
+
 			<section id="papers">
 				<div class="container">
 					<h2>Publications</h2>
@@ -93,172 +156,91 @@
 							href="https://scholar.google.com/citations?hl=en&user=4uZ9qhIAAAAJ">Google Scholar</a> or <a
 							target="_blank" href="https://www.semanticscholar.org/author/148200620">Semantic
 							Scholar</a>.</p>
-					<div class="features">
-						<article>
-							<img class="image" style="padding-top:30px;" src="images/GrapheneSpin.gif"
-								alt="Dirac cones in the conduction and valence bands of Graphene reconstructed from smooth interpolants by learning invariants instead of the surfaces themselves."
-								title="Dirac cones in the conduction and valence bands of Graphene reconstructed from smooth interpolants by learning invariants instead of the surfaces themselves." />
-							<div class="inner">
-								<h4>Machine learning interactions and materials</h4>
-								<p align="left">Many physical and biological systems can be accurately modeled using
-									atomistic many body interactions. Machine learning based methods allow one to infer
-									succesful models for otherwise prohibitively large and complex systems. </p>
-								<p align="left">
-									I work on novel methodologies and applications of such frameworks as well as the
-									closely related problem of analyzing their theoretical foundations.</p>
-							</div>
-							<p></p>
-							<ol reversed class="pdf-list">
-								<li><em>Parameterizing Intersecting Surfaces via Invariants</em> </br> T. S. Gutleb, <a
+							<article>
+					<ol reversed class="pdf-list">
+								<li><em>Parameterizing Intersecting Surfaces via Invariants</em> </br> <a target="_blank" href="https://arxiv.org/abs/2407.03731"
+									class="primary button small icon fa-external-link tight">arXiv</a> &nbsp;  T. S. Gutleb, <a
 									target="_blank" href="https://scholar.google.com/citations?user=N8HRUpQAAAAJ&hl=en">R. Barrett</a>, <a
 									target="_blank" href="https://www.chemie.uni-leipzig.de/en/wilhelm-ostwald-institute-for-physical-and-theoretical-chemistry/juniorprofessur-westermayr">J. Westermayr</a>, <a
 									target="_blank" href="https://personal.math.ubc.ca/~ortner/">C. Ortner</a>.
-								&nbsp;<a target="_blank" href="https://arxiv.org/abs/2407.03731"
-									class="primary button small icon fa-external-link tight">arXiv</a></li>
-								<li><em>Atomic Cluster Expansion without Self-Interaction</em> </br> <a target="_blank"
+								&nbsp; (2024).</li>
+								<li><em>Atomic Cluster Expansion Without Self-Interaction</em> </br> <a target="_blank" href="https://arxiv.org/abs/2401.01550"
+									class="primary button small icon fa-external-link tight">arXiv</a> &nbsp;  <a target="_blank"
 										href="https://cheukhinhojerry.github.io/">C.H. Ho</a>, T. S. Gutleb, <a
-										target="_blank" href="https://personal.math.ubc.ca/~ortner/">C. Ortner</a>.
-									&nbsp;<a target="_blank" href="https://arxiv.org/abs/2401.01550"
-										class="primary button small icon fa-external-link tight">arXiv</a></li>
-							</ol>
-						</article>
-						<article>
-							<img class="image" style="padding-top:30px;" src="images/timefractionaldampeningwave.gif"
-								alt="Wave equation on a disk dampened by a time-fractional Caputo derivative term."
-								title="Wave equation on a disk dampened by a time-fractional Caputo derivative term." />
-							<div class="inner">
-								<h4>Fractional Differential Equations</h4>
-								<p align="left">Fractional differential equations generalize ODEs and PDEs to include
-									derivative operators of non-integer order. The resulting operators are generally
-									nonlocal and thus pose several challenges to conventional numerical approaches. </p>
-								<p align="left"> Fractional PDEs appear in natural science applications featuring memory
-									effects, e.g. photoacoustic imaging in medical physics.</p>
-							</div>
-							<p></p>
-							<ol reversed class="pdf-list">
-								<li><em>A frame approach for equations involving the fractional Laplacian</em> </br> <a
+										target="_blank" href="https://personal.math.ubc.ca/~ortner/">C. Ortner</a>. &nbsp; (2024)
+									</li>
+								<li><em>A Frame Approach for Equations Involving the Fractional Laplacian</em> </br>  <a
+									target="_blank" href="https://arxiv.org/abs/2311.12451"
+									class="primary button small icon fa-external-link tight">arXiv</a>  &nbsp; <a
 										target="_blank" href="https://ioannispapapadopoulos.github.io/">Ioannis P. A.
 										Papadopoulos</a>, T. S. Gutleb, <a target="_blank"
 										href="https://carrilloja.org/">J. A. Carrillo</a>, <a target="_blank"
-										href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>. &nbsp;<a
-										target="_blank" href="https://arxiv.org/abs/2311.12451"
-										class="primary button small icon fa-external-link tight">arXiv</a></li>
-								<li><em>Explicit fractional Laplacians and Riesz potentials of classical functions</em>
-									</br> T. S. Gutleb, <a target="_blank"
+										href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>. &nbsp; (2023)</li>
+								<li><em>Explicit Fractional Laplacians and Riesz Potentials of Classical Functions</em>
+									</br> <a target="_blank" href="https://arxiv.org/abs/2311.10896"
+									class="primary button small icon fa-external-link tight">arXiv</a> &nbsp;  T. S. Gutleb, <a target="_blank"
 										href="https://ioannispapapadopoulos.github.io/">Ioannis P. A. Papadopoulos</a>.
-									&nbsp;<a target="_blank" href="https://arxiv.org/abs/2311.10896"
-										class="primary button small icon fa-external-link tight">arXiv</a></li>
-								<li><em>A static memory sparse spectral method for time-fractional PDEs</em> </br> T. S.
-									Gutleb, <a target="_blank" href="https://carrilloja.org/">J. A. Carrillo</a>.
-									<em>Journal of Computational Physics (2023)</em>. &nbsp; <a target="_blank"
-										href="https://arxiv.org/abs/2304.06855"
-										class="primary button small icon fa-external-link tight">arXiv</a>&nbsp; <a
-										target="_blank" href="https://doi.org/10.1016/j.jcp.2023.112522"
-										class="primary button small icon fa-external-link tight">DOI</a></li>
-							</ol>
-						</article>
-						<article>
-							<img class="image" style="padding-top:30px;" src="images/forced-helmholtz-rho-0-5.png"
-								alt="Numerical solution to an inhomogeneous Helmholtz equation with k = 80 and right-hand side f(x,y) = sin(100x) on an annular domain with inner radius 0.5."
-								title="Numerical solution to an inhomogeneous Helmholtz equation with k = 80 and right-hand side f(x,y) = sin(100x) on an annular domain with inner radius 0.5." />
-							<div class="inner">
-								<h4>Orthogonal Polynomials and Spectral Methods</h4>
-								<p align="left">Orthogonal polynomials can be used to accurately and efficiently
-									approximate functions.</p>
-								<p align="left"> Alongside their use in quadrature methods they can be used to construct
-									spectral methods for solving integral as well as partial differential equations with
-									sparse discretisations and spectral convergence.</p>
-							</div>
-							<p></p>
-							<ol reversed class="pdf-list">
-								<li><em>Building hierarchies of semiclassical Jacobi polynomials for spectral methods in
-										annuli</em> </br> <a target="_blank"
-										href="https://ioannispapapadopoulos.github.io/">I. P. A. Papadopoulos</a>, T. S.
+									&nbsp; (2023)</li>
+								<li><em>A Static Memory Sparse Spectral Method for Time-Fractional PDEs</em> </br> <a target="_blank"
+									href="https://arxiv.org/abs/2304.06855"
+									class="primary button small icon fa-external-link tight">arXiv</a>&nbsp; <a
+									target="_blank" href="https://doi.org/10.1016/j.jcp.2023.112522"
+									class="primary button small icon fa-external-link tight">DOI</a> &nbsp;T. S.
+									Gutleb, <a target="_blank" href="https://carrilloja.org/">J. A. Carrillo</a>. &nbsp;
+									<em>Journal of Computational Physics (2023)</em>.</li>
+								<li><em>Building Hierarchies of Semiclassical Jacobi Polynomials for Spectral Methods In Annuli</em> </br> <a target="_blank" href="https://arxiv.org/abs/2310.07541"
+									class="primary button small icon fa-external-link tight">arXiv</a> <a target="_blank"
+										href="https://ioannispapapadopoulos.github.io/"> &nbsp; I. P. A. Papadopoulos</a>, T. S.
 									Gutleb, <a target="_blank" href="https://home.cc.umanitoba.ca/~slevinrm/">R. M.
 										Slevinsky</a>, <a target="_blank" href="http://wwwf.imperial.ac.uk/~solver/">S.
-										Olver</a>. &nbsp;<a target="_blank" href="https://arxiv.org/abs/2310.07541"
-										class="primary button small icon fa-external-link tight">arXiv</a></li>
-								<li><em>Polynomial and rational measure modifications of orthogonal polynomials via
-										infinite-dimensional banded matrix factorizations</em> </br> T. S. Gutleb, <a
+										Olver</a>. &nbsp; (2023).</li>
+								<li><em>Polyn. and Rational Measure Modifications of Orth. Polynomials via Inf.-Dim. Banded Matrix Factorizations</em> </br> <a target="_blank" href="https://arxiv.org/abs/2302.08448"
+									class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; T. S. Gutleb, <a
 										target="_blank" href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>, <a
 										target="_blank" href="https://home.cc.umanitoba.ca/~slevinrm/">R. M.
-										Slevinsky</a>. &nbsp;<a target="_blank" href="https://arxiv.org/abs/2302.08448"
-										class="primary button small icon fa-external-link tight">arXiv</a></li>
-								<li><em>A Fast Sparse Spectral Method for Nonlinear Integro-differential Volterra
-										Equations with General Kernels</em></br> T. S. Gutleb. <em>Advances in
-										Computational Mathematics (2021)</em>. &nbsp; <a target="_blank"
-										href="https://arxiv.org/abs/2005.06081"
-										class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a
-										target="_blank" href="https://doi.org/10.1007/s10444-021-09866-7"
-										class="primary button small icon fa-external-link tight">DOI</a></li>
-								<li><em>A Sparse Spectral Method for Volterra Integral Equations Using Orthogonal
-										Polynomials on the Triangle</em></br> T. S. Gutleb, <a target="_blank"
-										href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>. <em>SIAM Journal on
-										Numerical Analysis (2020)</em>. &nbsp; <a target="_blank"
-										href="https://arxiv.org/abs/1906.03907"
-										class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a
-										target="_blank" href="https://doi.org/10.1137/19M1267441"
-										class="primary button small icon fa-external-link tight">DOI</a></li>
-							</ol>
-						</article>
-						<article>
-							<img class="image" style="padding-top:30px;" src="images/a4-b145_no_gap.gif"
-								alt="Convergence of histograms associated with attractive-repulsive particle simulation to the equilibrium measure."
-								title="Convergence of histograms associated with attractive-repulsive particle simulation to the equilibrium measure." />
-							<div class="inner">
-								<h4>Computing Equilibrium Measures</h4>
-								<p align="left">Equilibrium measure problems arise in the continuous mean-field limit of
-									attractive-repulsive particle systems and have diverse applications ranging from
-									swarming behavior in animals to self-assembly properties of particle systems.</p>
-								<p align="left">As power law interactions involve <a target="_blank"
-										href="https://en.wikipedia.org/wiki/Riesz_potential">Riesz potentials</a>, this
-									special case also relates to fractional differential equations. </p>
-							</div>
-							<p></p>
-							<ol reversed class="pdf-list">
+										Slevinsky</a>. &nbsp; (2023)</li>
 								<li><em>Computation of Power Law Equilibrium Measures on Balls of Arbitrary
-										Dimension</em> </br> T. S. Gutleb, <a target="_blank"
-										href="https://carrilloja.org/">J. A. Carrillo</a>, <a target="_blank"
-										href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>. <em>Constructive
-										Approximation (2022)</em>. &nbsp; <a target="_blank"
+										Dimension</em> </br>  <a target="_blank"
 										href="https://arxiv.org/abs/2109.00843"
 										class="primary button small icon fa-external-link tight">arXiv</a>&nbsp; <a
 										target="_blank" href="https://doi.org/10.1007/s00365-022-09606-0"
-										class="primary button small icon fa-external-link tight">DOI</a></li>
-								<li><em>Computing Equilibrium Measures with Power Law Kernels</em></br> T. S. Gutleb, <a
+										class="primary button small icon fa-external-link tight">DOI</a> &nbsp;  T. S. Gutleb, <a target="_blank"
+										href="https://carrilloja.org/">J. A. Carrillo</a>, <a target="_blank"
+										href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>.&nbsp;  <em>Constructive
+										Approximation (2022)</em>.</li>
+								<li><em>Computing Equilibrium Measures with Power Law Kernels</em></br> <a target="_blank"
+									href="https://arxiv.org/abs/2011.00045"
+									class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a
+									target="_blank" href="https://doi.org/10.1090/mcom/3740"
+									class="primary button small icon fa-external-link tight">DOI</a>&nbsp;  T. S. Gutleb, <a
 										target="_blank" href="https://carrilloja.org/">J. A. Carrillo</a>, <a
-										target="_blank" href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>.
-									<em>Mathematics of Computation (2022)</em>. &nbsp; <a target="_blank"
-										href="https://arxiv.org/abs/2011.00045"
-										class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a
-										target="_blank" href="https://doi.org/10.1090/mcom/3740"
-										class="primary button small icon fa-external-link tight">DOI</a></li>
-							</ol>
-						</article>
-						<article>
-							<img class="image" width="60%" src="images/spinstates.gif"
-								alt="Isosurface evolution of spin up (red) and spin down (blue) states as solutions of the Pauli equation coupled to an external magnetic field."
-								title="Isosurface evolution of spin up (red) and spin down (blue) states as solutions of the Pauli equation coupled to an external magnetic field." /></a>
-							<div class="inner">
-								<h4>Numerics for magnetic Schrödinger equations</h4>
-								<p align="left">Strang splitting methods have been successfully used for the numerical
-									treatment of magnetic Schrödinger equations in their appropriate 3D context.</p>
-								<p align="left"> I have worked towards extending these results to also work for
-									relativistic equations which account for quantum mechanical spin.</p>
-							</div>
-							<p></p>
-							<ol reversed class="pdf-list">
-								<li><em>A time splitting method for the three-dimensional linear Pauli equation</em>
-									</br> T. S. Gutleb, N. J. Mauser, M. Ruggeri, H. P. Stimming. <em>Computational
-										Methods in Applied Mathematics (2023)</em>. <a target="_blank"
-										href="https://arxiv.org/abs/2005.06072"
-										class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a
-										target="_blank" href="https://doi.org/10.1515/cmam-2023-0094"
-										class="primary button small icon fa-external-link tight">DOI</a></li>
+										target="_blank" href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>.&nbsp; 
+									<em>Mathematics of Computation (2022)</em>. </li>
+										<li><em>A Fast Sparse Spectral Method for Nonlinear Integro-differential Volterra
+											Equations with General Kernels</em></br> <a target="_blank"
+											href="https://arxiv.org/abs/2005.06081"
+											class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a
+											target="_blank" href="https://doi.org/10.1007/s10444-021-09866-7"
+											class="primary button small icon fa-external-link tight">DOI</a>&nbsp; T. S. Gutleb. &nbsp; <em>Advances in
+											Computational Mathematics (2021)</em>. </li>
+											<li><em>A Time Splitting Method for the Three-Dimensional Linear Pauli Equation</em>
+											</br>  <a target="_blank"
+											href="https://arxiv.org/abs/2005.06072"
+											class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a
+											target="_blank" href="https://doi.org/10.1515/cmam-2023-0094"
+											class="primary button small icon fa-external-link tight">DOI</a> &nbsp; T. S. Gutleb, N. Mauser, M. Ruggeri, H. Stimming. &nbsp; <em>Comp.
+												Methods in Appl. Math. (2023)</em>.</li>
+									<li><em>A Sparse Spectral Method for Volterra Integral Equations Using Orthogonal
+											Polynomials on the Triangle</em></br> <a target="_blank"
+											href="https://arxiv.org/abs/1906.03907"
+											class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a
+											target="_blank" href="https://doi.org/10.1137/19M1267441"
+											class="primary button small icon fa-external-link tight">DOI</a> &nbsp; T. S. Gutleb, <a target="_blank"
+											href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>. &nbsp; <em>SIAM Journal on
+											Numerical Analysis (2020)</em>.</li>
 							</ol>
 						</article>
 					</div>
-				</div>
 			</section>
 
 			<section id="talks">
