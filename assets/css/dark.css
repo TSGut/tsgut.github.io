@@ -49,9 +49,9 @@ Scroll to the bottom to start adding your dark mode styles
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
     z-index: 1000;
-    -webkit-transition: .3s ease-in;
-    -o-transition: .3s ease-in;
-    transition: .3s ease-in;
+    -webkit-transition: .6s ease-in;
+    -o-transition: .6s ease-in;
+    transition: .6s ease-in;
 }
 
 .top-dark-mode-button .dark-toggle {
@@ -68,9 +68,9 @@ Scroll to the bottom to start adding your dark mode styles
     transform: rotate(90deg);
     right: 22px;
     top: 10px;
-    -webkit-transition: .1s ease-in;
-    -o-transition: .1s ease-in;
-    transition: .1s ease-in;
+    -webkit-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    transition: .5s ease-in;
 }
 
 body.dark-mode .top-dark-mode-button:after {
@@ -92,9 +92,9 @@ body.dark-mode .top-dark-mode-button:after {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-transition: .3s ease;
-    -o-transition: .3s ease;
-    transition: .3s ease;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -112,7 +112,7 @@ body.dark-mode .top-dark-mode-button:after {
 }
 
 body.dark-mode .dark-toggle {
-    background: #000;
+    background: #1a1c23;
     background: -o-linear-gradient(left, #000 0%, #000 100%);
     background: -webkit-gradient(linear, left top, right top, from(#000), to(#000));
     background: linear-gradient(90deg, #000 0%, #000 100%);
@@ -127,18 +127,18 @@ body.dark-mode .dark-toggle {
     border-radius: 50%;
     background: #fff;
     position: absolute;
-    -webkit-transition: .3s ease;
-    -o-transition: .3s ease;
-    transition: .3s ease;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 body.dark-mode .dark-toggle span {
     left: 15px;
-    -webkit-transition: .3s ease;
-    -o-transition: .3s ease;
-    transition: .3s ease;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
 }
 
 .top-dark-mode-button .dark-toggle {
@@ -151,11 +151,11 @@ body.dark-mode .dark-toggle span {
 /* Begin adding your dark mode styles here, like so: */
 
 body.dark-mode #wrapper {
-    background: #000
+    background: #1a1c23
 }
 
 body.dark-mode #footer {
-    background: #000
+    background: #1a1c23
 }
 
 body.dark-mode p {
@@ -200,12 +200,6 @@ body.dark-mode #header>nav ul li a:hover {
     color: #fff !important;
 }
 
-
 body.dark-mode #header {
     color: #fff !important;
-}
-
-.fa-sun-o {
-    position: relative;
-    top: +3px;
 }

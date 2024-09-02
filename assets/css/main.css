@@ -161,7 +161,7 @@ textarea {
 }
 
 .dark-mode {
-	background-color: black;
+	background-color: #272935;
 	color: white;
 }
 
@@ -2651,7 +2651,7 @@ input[type="button"],
 	background-color: #989898;
 	border-radius: 5px;
 	border: 0;
-	color: #ffffff !important;
+	color: #ffffff;
 	cursor: pointer;
 	display: inline-block;
 	font-weight: 700;
@@ -3534,4 +3534,15 @@ input[type="button"]:disabled,
 		padding: 0;
 	}
 
+}
+
+#darktoggler {
+	cursor: pointer  !important;
+	color: white !important;
+  }
+
+#darktoggler {
+	all: unset !important;
+	cursor: pointer  !important;
+	color: yellow !important;
 }
