@@ -3535,14 +3535,3 @@ input[type="button"]:disabled,
 	}
 
 }
-
-#darktoggler {
-	cursor: pointer  !important;
-	color: white !important;
-  }
-
-#darktoggler {
-	all: unset !important;
-	cursor: pointer  !important;
-	color: yellow !important;
-}

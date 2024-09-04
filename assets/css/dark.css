@@ -190,12 +190,29 @@ body.dark-mode li {
     color: #fff
 }
 
+#darktoggler {
+    all: unset !important;
+	cursor: pointer  !important;
+	color: white !important;
+  }
+
+body.dark-mode #darktoggler {
+	all: unset !important;
+	cursor: pointer  !important;
+	color: yellow !important;
+}
+
 body.dark-mode #header>nav ul li a.active {
     background: #000000;
     color: #fff !important;
 }
 
 body.dark-mode #header>nav ul li a:hover {
+    background: #000000;
+    color: #fff !important;
+}
+
+body.dark-mode a:hover {
     background: #000000;
     color: #fff !important;
 }
