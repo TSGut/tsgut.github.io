@@ -212,11 +212,6 @@ body.dark-mode #header>nav ul li a:hover {
     color: #fff !important;
 }
 
-body.dark-mode a:hover {
-    background: #000000;
-    color: #fff !important;
-}
-
 body.dark-mode #header {
     color: #fff !important;
 }
