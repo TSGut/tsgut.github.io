@@ -3898,6 +3898,20 @@ input[type="button"]:disabled,
 		--y: 70%;
 	}
 
+	.field-functions {
+		--h: 11.2em;
+		--w: 13.2em;
+		--x: 32.8%;
+		--y: 73.2%;
+	}
+
+	.field-medical {
+		--h: 8.2em;
+		--w: 10.9em;
+		--x: 65.2%;
+		--y: 59%;
+	}
+
 	.research-field span {
 		display: none;
 	}
