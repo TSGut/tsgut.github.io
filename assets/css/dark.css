@@ -366,3 +366,9 @@ body.dark-mode .research-placeholder {
 body.dark-mode .research-legend span {
     color: #ffffff;
 }
+
+body.dark-mode .research-field-legend span {
+    background: color-mix(in srgb, var(--field-color) 28%, rgba(22, 25, 35, 0.86));
+    border-color: color-mix(in srgb, var(--field-color) 55%, transparent);
+    color: #ffffff;
+}
