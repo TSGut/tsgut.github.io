@@ -3891,6 +3891,13 @@ input[type="button"]:disabled,
 		transform: translate(-50%, -50%) rotate(0deg) scale(0.82);
 	}
 
+	.field-fractional {
+		--h: 10.4em;
+		--w: 10.6em;
+		--x: 56%;
+		--y: 70%;
+	}
+
 	.research-field span {
 		display: none;
 	}
@@ -3905,13 +3912,13 @@ input[type="button"]:disabled,
 	}
 
 	.dot-volterra {
-		--x: 40%;
-		--y: 38%;
+		--x: 35.5%;
+		--y: 42.5%;
 	}
 
 	.dot-triangle {
-		--x: 44%;
-		--y: 40%;
+		--x: 39.5%;
+		--y: 44.5%;
 	}
 
 	.dot-equilibrium {
@@ -3940,13 +3947,13 @@ input[type="button"]:disabled,
 	}
 
 	.dot-riesz {
-		--x: 44%;
-		--y: 66%;
+		--x: 42.6%;
+		--y: 68.5%;
 	}
 
 	.dot-frame {
-		--x: 45.5%;
-		--y: 62.5%;
+		--x: 44.1%;
+		--y: 67.1%;
 	}
 
 	.dot-ultrasound {
@@ -3965,13 +3972,13 @@ input[type="button"]:disabled,
 	}
 
 	.dot-matrix {
-		--x: 79%;
-		--y: 38.5%;
+		--x: 82%;
+		--y: 35.5%;
 	}
 
 	.dot-pauli {
 		--x: 84%;
-		--y: 29.5%;
+		--y: 26.5%;
 	}
 
 	.dot-meijerg {
