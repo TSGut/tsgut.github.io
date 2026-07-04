@@ -4,8 +4,8 @@
 <head>
 	<title>Timon S. Gutleb</title>
 	<meta charset="utf-8">
-  	<meta name="description" content="Personal website of Timon S. Gutleb, Lecturer in Scientific Computing at the University of Leeds">
-  	<meta name="author" content="Timon S. Gutleb">
+	<meta name="description" content="Personal website of Timon S. Gutleb, Lecturer in Scientific Computing at the University of Leeds">
+	<meta name="author" content="Timon S. Gutleb">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/dark.css" />
@@ -18,22 +18,26 @@
 	<section id="header">
 		<header>
 <p></p>
-			<div class="image avatar"><img src="images/profile.webp" alt="Picture of Timon S. Gutleb." />
+			<div class="image avatar"><img src="images/profile.jpg" alt="Picture of Timon S. Gutleb." />
 			</div>
 			<h1 id="logo">Timon S. Gutleb</h1>
 		</header>
 		<nav id="nav">
 			<ul>
 				<li><a href="#about" class="active">About Me</a></li>
-				<li><a href="#research">Research</a></li>
+				<li><a href="#research">Research Map</a></li>
 				<li><a href="#papers">Publications</a></li>
+				<li><a href="#software">Software</a></li>
+				<li><a href="#education-career">Background</a></li>
+				<!--
 				<li><a href="#talks">Selected Talks</a></li>
+				-->
 				<li><a href="#teaching">Teaching</a></li>
 				<li>&nbsp;</li>
 				<li><button onclick="toggleDarkMode()" id="darktoggler" title="Switch between light and dark mode">
 					<svg width="30" height="30" id="light-icon">
 					  <circle cx="15" cy="15" r="6" fill="currentColor" />
-			  
+
 					  <line
 						id="ray"
 						stroke="currentColor"
@@ -44,7 +48,7 @@
 						x2="15"
 						y2="4"
 					  ></line>
-			  
+
 					  <use href="#ray" transform="rotate(45 15 15)" />
 					  <use href="#ray" transform="rotate(90 15 15)" />
 					  <use href="#ray" transform="rotate(135 15 15)" />
@@ -98,74 +102,52 @@
 			<section id="about">
 				<div class="container">
 					<h2>About Me</h2>
-					<p align="left">I am a Lecturer (Assistant Professor) in Scientific Computing at the University of Leeds. </p>
-					<p align="left"> My research focus is the development of computational algorithms and tools for natural science applications such as molecular quantum physics and collective behavior in biology, including specifically also machine learning models thereof. I am also interested in computational orthogonal polynomials and their applications in spectral methods as well as the aforementioned machine learning models. </p>
-					<p align="left"> Previously I was a PIMS-Simons postdoctoral fellow at the University of British Columbia and a postdoctoral research associate at the University of Oxford after having completed a PhD in applied mathematics at the Imperial College London. </p>
-
+					<p align="left">I’m a Lecturer (Assistant Professor) in Scientific Computing at the University of Leeds developing applied mathematics foundations and turning them into computational tools to solve real-world problems in applications from molecular quantum physics and materials science to collective behavior in biology.</p>
 				</div>
 			</section>
 
 			<section id="research">
 				<div class="container">
-				<h2>Research</h2>
-				<p>The following is a non-exhaustive list of things I have worked on and am currently interested in.</p>
-				<div class="features">
-					<article>
-						<img class="image" style="padding-top:30px;" src="images/GrapheneSpin.webp"
-							alt="Dirac cones in the conduction and valence bands of graphene reconstructed from smooth interpolants by learning invariants instead of the surfaces themselves."
-							title="Dirac cones in the conduction and valence bands of graphene reconstructed from smooth interpolants by learning invariants instead of the surfaces themselves." />
-						<div class="inner">
-							<h3>Machine learning conical intersections</h3>
-							<p align="left">Conical intersections play a crucial role in determining the dynamics of molecules and materials upon light excitation, molecular orbitals and material band structure. 
-								In the relevant context of high-dimensional non-smooth hyper-surfaces, common machine learning models perform poorly.</p>
-								<p align="left">
-								I have worked on overcoming these issues by learning globally smooth invariant quantities from which the desired conical intersections can be reconstructed accurately.</p>
+					<h2>Research Map</h2>
+
+					<div class="research-atlas">
+						<div class="research-map" aria-label="A map of research deliverables positioned by overlapping themes.">
+							<span class="research-field field-ml"><span data-preview-text="Learning models constrained by scientific application domain knowledge and structure.">Scientific Machine Learning</span></span>
+							<span class="research-field field-molecular"><span data-preview-text="Applications in quantum physics, molecular simulation, and materials.">Computational Physics and Materials</span></span>
+							<span class="research-field field-medical"><span data-preview-text="Medical applications, medical physics, and imaging.">Computational Medicine</span></span>
+							<span class="research-field field-spectral"><span data-preview-text="High-order sparse algorithms for PDEs, integral equations, and fractional models.">Spectral Methods</span></span>
+							<span class="research-field field-functions"><span data-preview-text="Computable structure in gamma functions, Meijer G-functions, orthogonal polynomials, and related transforms.">Special Functions</span></span>
+							<span class="research-field field-fractional"><span data-preview-text="Nonlocal derivatives and potentials with memory or long-range effects.">Fractional Calculus</span></span>
+
+							<span class="research-dot dot-paper dot-volterra"><span class="research-preview"><img src="images/OsciVIDE_graph.jpg" alt="" /><strong>A Fast Sparse Spectral Method for Nonlinear Integro-Differential Volterra Equations with General Kernels</strong><span class="research-meta">T. S. Gutleb.<br /><span class="research-venue"><span><em>Advances in Computational Mathematics</em>.</span><span class="research-preview-actions"><a target="_blank" href="https://arxiv.org/abs/2005.06081" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1007/s10444-021-09866-7" class="primary button small icon fa-external-link tight">DOI</a></span></span></span><span class="research-preview-footer"><small>Paper</small></span></span></span>
+							<span class="research-dot dot-paper dot-triangle"><span class="research-preview"><img src="images/volterraop.jpg" alt="" /><strong>A Sparse Spectral Method for Volterra Integral Equations Using Orthogonal Polynomials on the Triangle</strong><span class="research-meta">T. S. Gutleb, S. Olver.<br /><span class="research-venue"><span><em>SIAM Journal on Numerical Analysis</em>.</span><span class="research-preview-actions"><a target="_blank" href="https://arxiv.org/abs/1906.03907" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1137/19M1267441" class="primary button small icon fa-external-link tight">DOI</a></span></span></span><span class="research-preview-footer"><small>Paper</small></span></span></span>
+							<span class="research-dot dot-paper dot-equilibrium"><span class="research-preview"><img src="images/1%20-%20a4-b145_no_gap.gif" alt="" /><strong>Computing Equilibrium Measures with Power Law Kernels</strong><span class="research-meta">T. S. Gutleb, J. A. Carrillo, S. Olver.<br /><span class="research-venue"><span><em>Mathematics of Computation</em>.</span><span class="research-preview-actions"><a target="_blank" href="https://arxiv.org/abs/2011.00045" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1090/mcom/3740" class="primary button small icon fa-external-link tight">DOI</a></span></span></span><span class="research-preview-footer"><small>Paper</small></span></span></span>
+							<span class="research-dot dot-paper dot-balls"><span class="research-preview"><img src="images/ballequilibrium.jpg" alt="" /><strong>Computation of Power Law Equilibrium Measures on Balls of Arbitrary Dimension</strong><span class="research-meta">T. S. Gutleb, J. A. Carrillo, S. Olver.<br /><span class="research-venue"><span><em>Constructive Approximation</em>.</span><span class="research-preview-actions"><a target="_blank" href="https://arxiv.org/abs/2109.00843" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1007/s00365-022-09606-0" class="primary button small icon fa-external-link tight">DOI</a></span></span></span><span class="research-preview-footer"><small>Paper</small></span></span></span>
+							<span class="research-dot dot-paper dot-annuli"><span class="research-preview"><img src="images/forced-helmholtz-rho-0-5.webp" alt="" /><strong>Building Hierarchies of Semiclassical Jacobi Polynomials for Spectral Methods in Annuli</strong><span class="research-meta">I. P. A. Papadopoulos, T. S. Gutleb, R. M. Slevinsky, S. Olver.<br /><span class="research-venue"><span><em>SIAM Journal on Scientific Computing</em>.</span><span class="research-preview-actions"><a target="_blank" href="https://arxiv.org/abs/2310.07541" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1137/23M160846X" class="primary button small icon fa-external-link tight">DOI</a></span></span></span><span class="research-preview-footer"><small>Paper</small></span></span></span>
+							<span class="research-dot dot-paper dot-measuremods"><span class="research-preview"><img src="images/modifiedjacobipolynomial.png" alt="" /><strong>Polynomial and Rational Measure Modifications of Orthogonal Polynomials via Infinite-Dimensional Banded Matrix Factorizations</strong><span class="research-meta">T. S. Gutleb, S. Olver, R. M. Slevinsky.<br /><span class="research-venue"><span><em>Foundations of Computational Mathematics</em>.</span><span class="research-preview-actions"><a target="_blank" href="https://arxiv.org/abs/2302.08448" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1007/s10208-024-09671-w" class="primary button small icon fa-external-link tight">DOI</a></span></span></span><span class="research-preview-footer"><small>Paper</small></span></span></span>
+							<span class="research-dot dot-paper dot-staticmemory"><span class="research-preview"><img src="images/timefractionaldampeningwave.webp" alt="" /><strong>A Static Memory Sparse Spectral Method for Time-Fractional PDEs</strong><span class="research-meta">T. S. Gutleb, J. A. Carrillo.<br /><span class="research-venue"><span><em>Journal of Computational Physics</em>.</span><span class="research-preview-actions"><a target="_blank" href="https://arxiv.org/abs/2304.06855" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1016/j.jcp.2023.112522" class="primary button small icon fa-external-link tight">DOI</a></span></span></span><span class="research-preview-footer"><small>Paper</small></span></span></span>
+							<span class="research-dot dot-paper dot-riesz"><span class="research-preview"><img src="images/explicitfractionallaplacian.jpg" alt="" /><strong>Explicit Fractional Laplacians and Riesz Potentials of Classical Functions</strong><span class="research-meta">T. S. Gutleb, I. P. A. Papadopoulos.<br /><span class="research-venue"><span><em>arXiv preprint</em>.</span><span class="research-preview-actions"><a target="_blank" href="https://arxiv.org/abs/2311.10896" class="primary button small icon fa-external-link tight">arXiv</a></span></span></span><span class="research-preview-footer"><small>Paper</small></span></span></span>
+							<span class="research-dot dot-paper dot-frame"><span class="research-preview"><img src="images/fractional-heat-convergence.png" alt="" /><strong>A Frame Approach for Equations Involving the Fractional Laplacian</strong><span class="research-meta">I. P. A. Papadopoulos, T. S. Gutleb, J. A. Carrillo, S. Olver.<br /><span class="research-venue"><span><em>IMA Journal of Numerical Analysis</em>.</span><span class="research-preview-actions"><a target="_blank" href="https://arxiv.org/abs/2311.12451" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1093/imanum/draf086" class="primary button small icon fa-external-link tight">DOI</a></span></span></span><span class="research-preview-footer"><small>Paper</small></span></span></span>
+							<span class="research-dot dot-paper dot-ultrasound"><span class="research-preview"><img src="images/ultrasoundacoustics.jpg" alt="" /><strong>Modelling Power-Law Ultrasound Absorption Using a Time-Fractional, Static Memory, Fourier Pseudo-Spectral Method</strong><span class="research-meta">M. J. King, T. S. Gutleb, B. E. Treeby, B. T. Cox.<br /><span class="research-venue"><span><em>The Journal of the Acoustical Society of America</em>.</span><span class="research-preview-actions"><a target="_blank" href="https://arxiv.org/abs/2408.02541" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1121/10.0035937" class="primary button small icon fa-external-link tight">DOI</a></span></span></span><span class="research-preview-footer"><small>Paper</small></span></span></span>
+							<span class="research-dot dot-paper dot-ace"><span class="research-preview"><img src="images/alalala-molsim.webp" alt="" /><strong>Atomic Cluster Expansion Without Self-Interaction</strong><span class="research-meta">C.H. Ho, T. S. Gutleb, C. Ortner.<br /><span class="research-venue"><span><em>Journal of Computational Physics</em>.</span><span class="research-preview-actions"><a target="_blank" href="https://arxiv.org/abs/2401.01550" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1016/j.jcp.2024.113271" class="primary button small icon fa-external-link tight">DOI</a></span></span></span><span class="research-preview-footer"><small>Paper</small></span></span></span>
+							<span class="research-dot dot-paper dot-conical"><span class="research-preview"><img src="images/GrapheneSpin.webp" alt="" /><strong>Parameterizing Intersecting Surfaces via Invariants</strong><span class="research-meta">T. S. Gutleb, R. Barrett, J. Westermayr, C. Ortner.<br /><span class="research-venue"><span><em>Linear Algebra and its Applications</em>.</span><span class="research-preview-actions"><a target="_blank" href="https://arxiv.org/abs/2407.03731" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1016/j.laa.2026.05.009" class="primary button small icon fa-external-link tight">DOI</a></span></span></span><span class="research-preview-footer"><small>Paper</small></span></span></span>
+							<span class="research-dot dot-paper dot-matrix"><span class="research-preview"><img src="images/interstitial100K.gif" alt="" /><strong>Fast Automatically Differentiable Matrix Functions and Applications in Molecular Simulations</strong><span class="research-meta">T. Torabi, T. S. Gutleb, C. Ortner.<br /><span class="research-venue"><span><em>Computer Physics Communications</em>.</span><span class="research-preview-actions"><a target="_blank" href="https://arxiv.org/abs/2412.12598" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1016/j.cpc.2025.109832" class="primary button small icon fa-external-link tight">DOI</a></span></span></span><span class="research-preview-footer"><small>Paper</small></span></span></span>
+							<span class="research-dot dot-paper dot-pauli"><span class="research-preview"><img src="images/magfield.png" alt="" /><strong>A Time Splitting Method for the Three-Dimensional Linear Pauli Equation</strong><span class="research-meta">T. S. Gutleb, N. Mauser, M. Ruggeri, H. P. Stimming.<br /><span class="research-venue"><span><em>Computational Methods in Applied Mathematics</em>.</span><span class="research-preview-actions"><a target="_blank" href="https://arxiv.org/abs/2005.06072" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1515/cmam-2023-0094" class="primary button small icon fa-external-link tight">DOI</a></span></span></span><span class="research-preview-footer"><small>Paper</small></span></span></span>
+							<span class="research-dot dot-package dot-meijerg"><span class="research-preview"><img src="images/meijerg_animation_viridis.gif" alt="" /><strong><a target="_blank" rel="noopener" href="https://github.com/TSGut/MeijerG.jl">MeijerG.jl</a></strong><span>Julia package for computing Meijer G-functions.</span><small>Software</small></span></span>
+							<span class="research-dot dot-package dot-gamma"><span class="research-preview"><img src="images/gamma_complex_contour_preview.png" alt="" /><strong><a target="_blank" rel="noopener" href="https://github.com/JuliaMath/Gamma.jl">Gamma.jl</a></strong><span>Julia package for the gamma function and related utilities.</span><small>Software</small></span></span>
+							<span class="research-dot dot-package dot-semiclassical"><span class="research-preview"><img src="images/semiclassical_ops_preview.png" alt="" /><strong><a target="_blank" rel="noopener" href="https://github.com/JuliaApproximation/SemiclassicalOrthogonalPolynomials.jl">SemiclassicalOrthogonalPolynomials.jl</a></strong><span>Julia package for semiclassical orthogonal polynomials.</span><small>Software</small></span></span>
+
+							<div class="research-preview-panel" aria-live="polite"></div>
+
+							<div class="research-legend" aria-hidden="true">
+								<span><i class="legend-dot legend-paper"></i>Paper</span>
+								<span><i class="legend-dot legend-package"></i>Software</span>
+							</div>
 						</div>
-						<p></p>
-					</article>
-					<article>
-						<img class="image" style="padding-top:30px;" src="images/alalala-molsim.webp"
-							alt="Molecular dynamics simulation of an Ala-Ala-Ala molecule (C₉H₁₇N₃O₄)."
-							title="Molecular dynamics simulation of an Ala-Ala-Ala molecule (C₉H₁₇N₃O₄)." />
-						<div class="inner">
-							<h3>Machine learning of interaction models</h3>
-							<p align="left">Many physical and biological systems can be accurately modeled using
-								atomistic many body interactions. Machine learning based methods allow one to infer
-								succesful models for otherwise prohibitively large and complex systems. </p>
-							<p align="left">
-								I work on novel methodologies and applications of such frameworks as well as the
-								closely related problem of analyzing their theoretical foundations.</p>
-						</div>
-						<p></p>
-					</article>
-					<article>
-						<img class="image" style="padding-top:30px;" src="images/timefractionaldampeningwave.webp"
-							alt="Wave equation on a disk dampened by a time-fractional Caputo derivative term."
-							title="Wave equation on a disk dampened by a time-fractional Caputo derivative term." />
-						<div class="inner">
-							<h3>Fractional Differential Equations</h3>
-							<p align="left">Fractional differential equations generalize ODEs and PDEs to include
-								derivative operators of non-integer order. The resulting operators are generally
-								nonlocal and thus pose several challenges to conventional numerical approaches. </p>
-							<p align="left"> Fractional derivatives and closely related objects such as Riesz potentials appear in applications featuring memory
-								effects, e.g. photoacoustic imaging in medical physics or in the continuous limit of classical particle swarms.</p>
-						</div>
-						<p></p>
-					</article>
-					<article>
-						<img class="image" style="padding-top:30px;" src="images/forced-helmholtz-rho-0-5.webp"
-							alt="Numerical solution to an inhomogeneous Helmholtz equation with k = 80 and right-hand side f(x,y) = sin(100x) on an annular domain with inner radius 0.5."
-							title="Numerical solution to an inhomogeneous Helmholtz equation with k = 80 and right-hand side f(x,y) = sin(100x) on an annular domain with inner radius 0.5." />
-						<div class="inner">
-							<h3>Orthogonal Polynomials and Spectral Methods</h3>
-							<p align="left">Orthogonal polynomials can be used to accurately and efficiently
-								approximate functions.</p>
-							<p align="left"> With appropriate orthogonal polynomials for a given domain and weight function in hand one can construct quadrature methods as well as spectral methods for solving integral and partial differential equations with
-								sparse discretisations and spectral convergence.</p>
-						</div>
-						<p></p>
-					</article></div>
+					</div>
+				</div>
 			</section>
+
 
 			<section id="papers">
 				<div class="container">
@@ -174,116 +156,146 @@
 							href="https://scholar.google.com/citations?hl=en&user=4uZ9qhIAAAAJ">Google Scholar</a> or <a
 							target="_blank" href="https://www.semanticscholar.org/author/148200620">Semantic
 							Scholar</a>.</p>
-							<article>
-					<ol reversed class="pdf-list">
-								<li><em>Fast automatically differentiable matrix functions and applications in molecular simulations</em> </br> <a target="_blank" href="https://arxiv.org/abs/arXiv:2412.12598"
-									class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a
-									target="_blank" href="https://doi.org/10.1016/j.cpc.2025.109832"
-									class="primary button small icon fa-external-link tight">DOI</a> &nbsp;  <a href="https://scholar.google.ca/citations?user=ut8X5W8AAAAJ&hl=en" target="_blank">T. Torabi</a>, T. S. Gutleb, <a
-									target="_blank" href="https://personal.math.ubc.ca/~ortner/">C. Ortner</a>. <em>Computer Physics Communications (2025)</em>.
-								</li>
-								<li><em>Modelling Power-Law Ultrasound Absorption Using a Time-Fractional, Static Memory, Fourier Pseudo-Spectral Method</em> </br> <a target="_blank" href="https://arxiv.org/abs/2408.02541"
-									class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a
-									target="_blank" href="https://doi.org/10.1121/10.0035937"
-									class="primary button small icon fa-external-link tight">DOI</a> &nbsp;  <a href="http://bug.medphys.ucl.ac.uk/matthew-king" target="_blank">M. J. King</a>, T. S. Gutleb, <a href="http://bug.medphys.ucl.ac.uk/bradley-treeby" target="_blank">B. E. Treeby</a>, <a href="http://bug.medphys.ucl.ac.uk/ben-cox" target="_blank">B. T. Cox</a>. <em>The Journal of the Acoustical Society of America (2025)</em>.</li>
-								<li><em>Parameterizing Intersecting Surfaces via Invariants</em> </br> <a target="_blank" href="https://arxiv.org/abs/2407.03731"
-									class="primary button small icon fa-external-link tight">arXiv</a> &nbsp;  T. S. Gutleb, <a
-									target="_blank" href="https://scholar.google.com/citations?user=N8HRUpQAAAAJ&hl=en">R. Barrett</a>, <a
-									target="_blank" href="https://www.chemie.uni-leipzig.de/en/wilhelm-ostwald-institute-for-physical-and-theoretical-chemistry/juniorprofessur-westermayr">J. Westermayr</a>, <a
-									target="_blank" href="https://personal.math.ubc.ca/~ortner/">C. Ortner</a>. (2024)</li>
-								<li><em>Atomic Cluster Expansion Without Self-Interaction</em> </br> <a target="_blank" href="https://arxiv.org/abs/2401.01550"
-									class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a
-									target="_blank" href="https://doi.org/10.1016/j.jcp.2024.113271"
-									class="primary button small icon fa-external-link tight">DOI</a> &nbsp;  <a target="_blank"
-										href="https://cheukhinhojerry.github.io/">C.H. Ho</a>, T. S. Gutleb, <a
-										target="_blank" href="https://personal.math.ubc.ca/~ortner/">C. Ortner</a>.
-										<em>Journal of Computational Physics (2024)</em>.</li>
-									</li>
-								<li><em>A Frame Approach for Equations Involving the Fractional Laplacian</em> </br>  <a
-									target="_blank" href="https://arxiv.org/abs/2311.12451"
-									class="primary button small icon fa-external-link tight">arXiv</a>  &nbsp; <a
-										target="_blank" href="https://doi.org/10.1093/imanum/draf086"
-										class="primary button small icon fa-external-link tight">DOI</a> &nbsp; <a
-										target="_blank" href="https://ioannispapapadopoulos.github.io/">Ioannis P. A.
-										Papadopoulos</a>, T. S. Gutleb, <a target="_blank"
-										href="https://carrilloja.org/">J. A. Carrillo</a>, <a target="_blank"
-										href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>. <em>IMA Journal of Numerical Analysis (2025)</em>.</li>
-								<li><em>Explicit Fractional Laplacians and Riesz Potentials of Classical Functions</em>
-									</br> <a target="_blank" href="https://arxiv.org/abs/2311.10896"
-									class="primary button small icon fa-external-link tight">arXiv</a> &nbsp;  T. S. Gutleb, <a target="_blank"
-										href="https://ioannispapapadopoulos.github.io/">Ioannis P. A. Papadopoulos</a>.
-									(2023)</li>
-								<li><em>A Static Memory Sparse Spectral Method for Time-Fractional PDEs</em> </br> <a target="_blank"
-									href="https://arxiv.org/abs/2304.06855"
-									class="primary button small icon fa-external-link tight">arXiv</a>&nbsp; <a
-									target="_blank" href="https://doi.org/10.1016/j.jcp.2023.112522"
-									class="primary button small icon fa-external-link tight">DOI</a> &nbsp;T. S.
-									Gutleb, <a target="_blank" href="https://carrilloja.org/">J. A. Carrillo</a>. 
-									<em>Journal of Computational Physics (2023)</em>.</li>
-								<li><em>Building Hierarchies of Semiclassical Jacobi Polynomials for Spectral Methods In Annuli</em> </br> <a target="_blank" href="https://arxiv.org/abs/2310.07541"
-									class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a
-									target="_blank" href="https://doi.org/10.1137/23M160846X"
-									class="primary button small icon fa-external-link tight">DOI</a> &nbsp; <a target="_blank"
-										href="https://ioannispapapadopoulos.github.io/"> I. P. A. Papadopoulos</a>, T. S.
-									Gutleb, <a target="_blank" href="https://home.cc.umanitoba.ca/~slevinrm/">R. M.
-										Slevinsky</a>, <a target="_blank" href="http://wwwf.imperial.ac.uk/~solver/">S.
-										Olver</a>. <em>SIAM Journal on Scientific Computing (2024)</em>.</li>
-								<li><em>Polynomial and Rational Measure Modifications of Orthogonal Polynomials via Infinite-Dimensional Banded Matrix Factorizations</em> </br> <a target="_blank" href="https://arxiv.org/abs/2302.08448"
-									class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a
-									target="_blank" href="https://doi.org/10.1007/s10208-024-09671-w"
-									class="primary button small icon fa-external-link tight">DOI</a> &nbsp; T. S. Gutleb, <a
-										target="_blank" href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>, <a
-										target="_blank" href="https://home.cc.umanitoba.ca/~slevinrm/">R. M.
-										Slevinsky</a>. <em>Foundations of Comp. Math. (2024).</em></li>
-								<li><em>Computation of Power Law Equilibrium Measures on Balls of Arbitrary
-										Dimension</em> </br>  <a target="_blank"
-										href="https://arxiv.org/abs/2109.00843"
-										class="primary button small icon fa-external-link tight">arXiv</a>&nbsp; <a
-										target="_blank" href="https://doi.org/10.1007/s00365-022-09606-0"
-										class="primary button small icon fa-external-link tight">DOI</a> &nbsp;  T. S. Gutleb, <a target="_blank"
-										href="https://carrilloja.org/">J. A. Carrillo</a>, <a target="_blank"
-										href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>.  <em>Constructive
-										Approximation (2022)</em>.</li>
-								<li><em>Computing Equilibrium Measures with Power Law Kernels</em></br> <a target="_blank"
-									href="https://arxiv.org/abs/2011.00045"
-									class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a
-									target="_blank" href="https://doi.org/10.1090/mcom/3740"
-									class="primary button small icon fa-external-link tight">DOI</a>&nbsp;  T. S. Gutleb, <a
-										target="_blank" href="https://carrilloja.org/">J. A. Carrillo</a>, <a
-										target="_blank" href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>. 
-									<em>Mathematics of Computation (2022)</em>. </li>
-								<li><em>A Fast Sparse Spectral Method for Nonlinear Integro-differential Volterra
-											Equations with General Kernels</em></br> <a target="_blank"
-											href="https://arxiv.org/abs/2005.06081"
-											class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a
-											target="_blank" href="https://doi.org/10.1007/s10444-021-09866-7"
-											class="primary button small icon fa-external-link tight">DOI</a>&nbsp; T. S. Gutleb. &nbsp; <em>Advances in
-											Computational Mathematics (2021)</em>. </li>
-											<li><em>A Time Splitting Method for the Three-Dimensional Linear Pauli Equation</em>
-											</br>  <a target="_blank"
-											href="https://arxiv.org/abs/2005.06072"
-											class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a
-											target="_blank" href="https://doi.org/10.1515/cmam-2023-0094"
-											class="primary button small icon fa-external-link tight">DOI</a> &nbsp; T. S. Gutleb, N. Mauser, M. Ruggeri, H. Stimming. <em>Comp.
-												Meth. in Appl. Math. (2023)</em>.</li>
-								<li><em>A Sparse Spectral Method for Volterra Integral Equations Using Orthogonal
-											Polynomials on the Triangle</em></br> <a target="_blank"
-											href="https://arxiv.org/abs/1906.03907"
-											class="primary button small icon fa-external-link tight">arXiv</a> &nbsp; <a
-											target="_blank" href="https://doi.org/10.1137/19M1267441"
-											class="primary button small icon fa-external-link tight">DOI</a> &nbsp; T. S. Gutleb, <a target="_blank"
-											href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>. <em>SIAM Journal on
-											Numerical Analysis (2020)</em>.</li>
-							</ol>
+					<div class="publication-list">
+						<article class="publication-item">
+							<div class="publication-main">
+								<h3>Parameterizing Intersecting Surfaces via Invariants</h3>
+								<p>T. S. Gutleb, <a target="_blank" href="https://scholar.google.com/citations?user=N8HRUpQAAAAJ&hl=en">R. Barrett</a>, <a target="_blank" href="https://www.chemie.uni-leipzig.de/en/wilhelm-ostwald-institute-for-physical-and-theoretical-chemistry/juniorprofessur-westermayr">J. Westermayr</a>, <a target="_blank" href="https://personal.math.ubc.ca/~ortner/">C. Ortner</a>.<br /><em>Linear Algebra and its Applications</em>.</p>
+							</div>
+							<div class="publication-side"><span class="theme-node theme-node-paper dot-conical" data-themes="ml,molecular" aria-label="Themes: Scientific Machine Learning; Computational Physics and Materials"></span><time class="publication-date" datetime="2026">2026</time><div class="publication-actions"><a target="_blank" href="https://arxiv.org/abs/2407.03731" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1016/j.laa.2026.05.009" class="primary button small icon fa-external-link tight">DOI</a></div></div>
 						</article>
+						<article class="publication-item">
+							<div class="publication-main">
+								<h3>Fast Automatically Differentiable Matrix Functions and Applications in Molecular Simulations</h3>
+								<p><a href="https://scholar.google.ca/citations?user=ut8X5W8AAAAJ&hl=en" target="_blank">T. Torabi</a>, T. S. Gutleb, <a target="_blank" href="https://personal.math.ubc.ca/~ortner/">C. Ortner</a>.<br /><em>Computer Physics Communications</em>.</p>
+							</div>
+							<div class="publication-side"><span class="theme-node theme-node-paper dot-matrix" data-themes="ml,molecular" aria-label="Themes: Scientific Machine Learning; Computational Physics and Materials"></span><time class="publication-date" datetime="2025">2025</time><div class="publication-actions"><a target="_blank" href="https://arxiv.org/abs/2412.12598" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1016/j.cpc.2025.109832" class="primary button small icon fa-external-link tight">DOI</a></div></div>
+						</article>
+						<article class="publication-item">
+							<div class="publication-main">
+								<h3>Modelling Power-Law Ultrasound Absorption Using a Time-Fractional, Static Memory, Fourier Pseudo-Spectral Method</h3>
+								<p>M. J. King, T. S. Gutleb, <a href="http://bug.medphys.ucl.ac.uk/bradley-treeby" target="_blank">B. E. Treeby</a>, <a href="http://bug.medphys.ucl.ac.uk/ben-cox" target="_blank">B. T. Cox</a>.<br /><em>The Journal of the Acoustical Society of America</em>.</p>
+							</div>
+							<div class="publication-side"><span class="theme-node theme-node-paper dot-ultrasound" data-themes="medical,spectral,fractional" aria-label="Themes: Computational Medicine; Spectral Methods; Fractional Calculus"></span><time class="publication-date" datetime="2025">2025</time><div class="publication-actions"><a target="_blank" href="https://arxiv.org/abs/2408.02541" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1121/10.0035937" class="primary button small icon fa-external-link tight">DOI</a></div></div>
+						</article>
+						<article class="publication-item">
+							<div class="publication-main">
+								<h3>A Frame Approach for Equations Involving the Fractional Laplacian</h3>
+								<p><a target="_blank" href="https://ioannispapapadopoulos.github.io/">I. P. A. Papadopoulos</a>, T. S. Gutleb, <a target="_blank" href="https://carrilloja.org/">J. A. Carrillo</a>, <a target="_blank" href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>.<br /><em>IMA Journal of Numerical Analysis</em>.</p>
+							</div>
+							<div class="publication-side"><span class="theme-node theme-node-paper dot-frame" data-themes="spectral,functions,fractional" aria-label="Themes: Spectral Methods; Special Functions; Fractional Calculus"></span><time class="publication-date" datetime="2025">2025</time><div class="publication-actions"><a target="_blank" href="https://arxiv.org/abs/2311.12451" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1093/imanum/draf086" class="primary button small icon fa-external-link tight">DOI</a></div></div>
+						</article>
+						<article class="publication-item">
+							<div class="publication-main">
+								<h3>Atomic Cluster Expansion Without Self-Interaction</h3>
+								<p><a target="_blank" href="https://cheukhinhojerry.github.io/">C.H. Ho</a>, T. S. Gutleb, <a target="_blank" href="https://personal.math.ubc.ca/~ortner/">C. Ortner</a>.<br /><em>Journal of Computational Physics</em>.</p>
+							</div>
+							<div class="publication-side"><span class="theme-node theme-node-paper dot-ace" data-themes="ml,molecular" aria-label="Themes: Scientific Machine Learning; Computational Physics and Materials"></span><time class="publication-date" datetime="2024">2024</time><div class="publication-actions"><a target="_blank" href="https://arxiv.org/abs/2401.01550" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1016/j.jcp.2024.113271" class="primary button small icon fa-external-link tight">DOI</a></div></div>
+						</article>
+						<article class="publication-item">
+							<div class="publication-main">
+								<h3>Building Hierarchies of Semiclassical Jacobi Polynomials for Spectral Methods in Annuli</h3>
+								<p><a target="_blank" href="https://ioannispapapadopoulos.github.io/">I. P. A. Papadopoulos</a>, T. S. Gutleb, <a target="_blank" href="https://home.cc.umanitoba.ca/~slevinrm/">R. M. Slevinsky</a>, <a target="_blank" href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>.<br /><em>SIAM Journal on Scientific Computing</em>.</p>
+							</div>
+							<div class="publication-side"><span class="theme-node theme-node-paper dot-annuli" data-themes="spectral,functions" aria-label="Themes: Spectral Methods; Special Functions"></span><time class="publication-date" datetime="2024">2024</time><div class="publication-actions"><a target="_blank" href="https://arxiv.org/abs/2310.07541" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1137/23M160846X" class="primary button small icon fa-external-link tight">DOI</a></div></div>
+						</article>
+						<article class="publication-item">
+							<div class="publication-main">
+								<h3>Polynomial and Rational Measure Modifications of Orthogonal Polynomials via Infinite-Dimensional Banded Matrix Factorizations</h3>
+								<p>T. S. Gutleb, <a target="_blank" href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>, <a target="_blank" href="https://home.cc.umanitoba.ca/~slevinrm/">R. M. Slevinsky</a>.<br /><em>Foundations of Computational Mathematics</em>.</p>
+							</div>
+							<div class="publication-side"><span class="theme-node theme-node-paper dot-measuremods" data-themes="spectral,functions" aria-label="Themes: Spectral Methods; Special Functions"></span><time class="publication-date" datetime="2024">2024</time><div class="publication-actions"><a target="_blank" href="https://arxiv.org/abs/2302.08448" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1007/s10208-024-09671-w" class="primary button small icon fa-external-link tight">DOI</a></div></div>
+						</article>
+						<article class="publication-item">
+							<div class="publication-main">
+								<h3>Explicit Fractional Laplacians and Riesz Potentials of Classical Functions</h3>
+								<p>T. S. Gutleb, <a target="_blank" href="https://ioannispapapadopoulos.github.io/">I. P. A. Papadopoulos</a>.<br /><em>arXiv preprint</em>.</p>
+							</div>
+							<div class="publication-side"><span class="theme-node theme-node-paper dot-riesz" data-themes="spectral,functions,fractional" aria-label="Themes: Spectral Methods; Special Functions; Fractional Calculus"></span><time class="publication-date" datetime="2023">2023</time><div class="publication-actions"><a target="_blank" href="https://arxiv.org/abs/2311.10896" class="primary button small icon fa-external-link tight">arXiv</a></div></div>
+						</article>
+						<article class="publication-item">
+							<div class="publication-main">
+								<h3>A Static Memory Sparse Spectral Method for Time-Fractional PDEs</h3>
+								<p>T. S. Gutleb, <a target="_blank" href="https://carrilloja.org/">J. A. Carrillo</a>.<br /><em>Journal of Computational Physics</em>.</p>
+							</div>
+							<div class="publication-side"><span class="theme-node theme-node-paper dot-staticmemory" data-themes="medical,spectral,fractional" aria-label="Themes: Computational Medicine; Spectral Methods; Fractional Calculus"></span><time class="publication-date" datetime="2023">2023</time><div class="publication-actions"><a target="_blank" href="https://arxiv.org/abs/2304.06855" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1016/j.jcp.2023.112522" class="primary button small icon fa-external-link tight">DOI</a></div></div>
+						</article>
+						<article class="publication-item">
+							<div class="publication-main">
+								<h3>A Time Splitting Method for the Three-Dimensional Linear Pauli Equation</h3>
+										<p>T. S. Gutleb, <a target="_blank" href="https://ucrisportal.univie.ac.at/en/persons/norbert-mauser/">N. Mauser</a>, <a target="_blank" href="https://mruggeri-math.github.io/">M. Ruggeri</a>, <a target="_blank" href="https://ucrisportal.univie.ac.at/en/persons/hans-peter-stimming/">H. P. Stimming</a>.<br /><em>Computational Methods in Applied Mathematics</em>.</p>
+							</div>
+							<div class="publication-side"><span class="theme-node theme-node-paper dot-pauli" data-themes="molecular" aria-label="Themes: Computational Physics and Materials"></span><time class="publication-date" datetime="2023">2023</time><div class="publication-actions"><a target="_blank" href="https://arxiv.org/abs/2005.06072" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1515/cmam-2023-0094" class="primary button small icon fa-external-link tight">DOI</a></div></div>
+						</article>
+						<article class="publication-item">
+							<div class="publication-main">
+								<h3>Computation of Power Law Equilibrium Measures on Balls of Arbitrary Dimension</h3>
+								<p>T. S. Gutleb, <a target="_blank" href="https://carrilloja.org/">J. A. Carrillo</a>, <a target="_blank" href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>.<br /><em>Constructive Approximation</em>.</p>
+							</div>
+							<div class="publication-side"><span class="theme-node theme-node-paper dot-balls" data-themes="spectral,functions,fractional" aria-label="Themes: Spectral Methods; Special Functions; Fractional Calculus"></span><time class="publication-date" datetime="2022">2022</time><div class="publication-actions"><a target="_blank" href="https://arxiv.org/abs/2109.00843" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1007/s00365-022-09606-0" class="primary button small icon fa-external-link tight">DOI</a></div></div>
+						</article>
+						<article class="publication-item">
+							<div class="publication-main">
+								<h3>Computing Equilibrium Measures with Power Law Kernels</h3>
+								<p>T. S. Gutleb, <a target="_blank" href="https://carrilloja.org/">J. A. Carrillo</a>, <a target="_blank" href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>.<br /><em>Mathematics of Computation</em>.</p>
+							</div>
+							<div class="publication-side"><span class="theme-node theme-node-paper dot-equilibrium" data-themes="spectral,functions,fractional" aria-label="Themes: Spectral Methods; Special Functions; Fractional Calculus"></span><time class="publication-date" datetime="2022">2022</time><div class="publication-actions"><a target="_blank" href="https://arxiv.org/abs/2011.00045" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1090/mcom/3740" class="primary button small icon fa-external-link tight">DOI</a></div></div>
+						</article>
+						<article class="publication-item">
+							<div class="publication-main">
+								<h3>A Fast Sparse Spectral Method for Nonlinear Integro-Differential Volterra Equations with General Kernels</h3>
+								<p>T. S. Gutleb.<br /><em>Advances in Computational Mathematics</em>.</p>
+							</div>
+							<div class="publication-side"><span class="theme-node theme-node-paper dot-volterra" data-themes="spectral" aria-label="Themes: Spectral Methods"></span><time class="publication-date" datetime="2021">2021</time><div class="publication-actions"><a target="_blank" href="https://arxiv.org/abs/2005.06081" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1007/s10444-021-09866-7" class="primary button small icon fa-external-link tight">DOI</a></div></div>
+						</article>
+						<article class="publication-item">
+							<div class="publication-main">
+								<h3>A Sparse Spectral Method for Volterra Integral Equations Using Orthogonal Polynomials on the Triangle</h3>
+								<p>T. S. Gutleb, <a target="_blank" href="http://wwwf.imperial.ac.uk/~solver/">S. Olver</a>.<br /><em>SIAM Journal on Numerical Analysis</em>.</p>
+							</div>
+							<div class="publication-side"><span class="theme-node theme-node-paper dot-triangle" data-themes="spectral" aria-label="Themes: Spectral Methods"></span><time class="publication-date" datetime="2020">2020</time><div class="publication-actions"><a target="_blank" href="https://arxiv.org/abs/1906.03907" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1137/19M1267441" class="primary button small icon fa-external-link tight">DOI</a></div></div>
+						</article>
+					</div>
 					</div>
 			</section>
 
+			<section id="software">
+				<div class="container">
+					<h2>Software</h2>
+					<p align="left">I contribute regularly to open-source software and provide companion code for most of my papers. Rather than listing every contribution, this section highlights packages where I act as a main developer or maintainer.</p>
+					<div class="software-list">
+						<a class="software-item" target="_blank" rel="noopener" href="https://github.com/TSGut/MeijerG.jl">
+							<span class="language-icon julia-icon" aria-label="Julia language"><i></i><i></i><i></i></span>
+							<div>
+								<h3>MeijerG.jl</h3>
+								<p>Julia package for computing Meijer G-functions.</p>
+							</div>
+							<span class="theme-node theme-node-package dot-meijerg" data-themes="functions" aria-label="Themes: Special Functions"></span>
+						</a>
+						<a class="software-item" target="_blank" rel="noopener" href="https://github.com/JuliaMath/Gamma.jl">
+							<span class="language-icon julia-icon" aria-label="Julia language"><i></i><i></i><i></i></span>
+							<div>
+								<h3>Gamma.jl</h3>
+								<p>Julia package for the gamma function and related utilities.</p>
+							</div>
+							<span class="theme-node theme-node-package dot-gamma" data-themes="functions" aria-label="Themes: Special Functions"></span>
+						</a>
+						<a class="software-item" target="_blank" rel="noopener" href="https://github.com/JuliaApproximation/SemiclassicalOrthogonalPolynomials.jl">
+							<span class="language-icon julia-icon" aria-label="Julia language"><i></i><i></i><i></i></span>
+							<div>
+								<h3 class="software-title-long">SemiclassicalOrthogonalPolynomials.jl</h3>
+								<p>Julia package for semiclassical orthogonal polynomials.</p>
+							</div>
+							<span class="theme-node theme-node-package dot-semiclassical" data-themes="spectral,functions" aria-label="Themes: Spectral Methods; Special Functions"></span>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!--
 			<section id="talks">
 				<div class="container">
 					<h2>Selected Talks</h2>
-					<p>Below is a selection of my conference talks. I'll update the website with a more complete list
-						soon.</p>
 					<ul class="pdf-list">
 						<li><a target="_blank"
 								href="https://numericalanalysisconference.org.uk/meetings/2023/minisymposia">29th
@@ -314,11 +326,59 @@
 					</ul>
 				</div>
 			</section>
+			-->
+
+			<section id="education-career">
+				<div class="container">
+					<h2>Background</h2>
+					<p>For a possibly more complete view, see my <a target="_blank" href="https://www.linkedin.com/in/gutleb/">LinkedIn</a> or <a target="_blank" href="https://orcid.org/0000-0002-8239-2372">ORCID</a>.</p>
+					<ol class="path-stack" aria-label="Education and career path">
+						<li class="path-item path-current">
+							<span class="path-step">Lecturer</span>
+							<strong>Lecturer (Assistant Professor) in Scientific Computing</strong>
+							<span><a target="_blank" href="https://www.leeds.ac.uk/">University of Leeds</a>, United Kingdom</span>
+							<time>2024-now</time>
+						</li>
+						<li class="path-item path-work">
+							<span class="path-step">Postdoc</span>
+							<strong>PIMS-Simons Postdoctoral Fellow</strong>
+							<span><a target="_blank" href="https://www.ubc.ca/">University of British Columbia</a>, Canada</span>
+							<time>2023-2024</time>
+						</li>
+						<li class="path-item path-work">
+							<span class="path-step">Postdoc</span>
+							<strong>Postdoctoral Research Associate</strong>
+							<span><a target="_blank" href="https://www.ox.ac.uk/">University of Oxford</a>, United Kingdom</span>
+							<time>2022-2023</time>
+						</li>
+						<li class="path-item path-phd">
+							<span class="path-step">PhD</span>
+							<strong>PhD Mathematics</strong>
+							<span><a target="_blank" href="https://www.imperial.ac.uk/">Imperial College London</a>, United Kingdom</span>
+							<time>2018-2022</time>
+						</li>
+						<li class="path-item path-study">
+							<span class="path-step">Master's</span>
+							<strong>MSc Mathematics, MSc Physics, MA Philosophy</strong>
+							<span><a target="_blank" href="https://www.univie.ac.at/en/">University of Vienna</a>, Austria</span>
+							<time>2016-2018</time>
+						</li>
+						<li class="path-item path-undergrad">
+							<span class="path-step">Undergrad.</span>
+							<strong>BSc Physics, BA Philosophy</strong>
+							<span><a target="_blank" href="https://www.univie.ac.at/en/">University of Vienna</a>, Austria</span>
+							<time>2013-2016</time>
+						</li>
+					</ol>
+				</div>
+			</section>
 
 			<section id="teaching">
 				<div class="container">
 					<h2>Teaching</h2>
-					<p>If you are a student of ongoing teaching at the University of Leeds, please use the module's <a href="https://minerva.leeds.ac.uk/">Minerva page</a> or reach out with questions via the module-associated Teams channel.</p>
+					<p>Students of ongoing modules at the University of Leeds should contact me through the official channels, usually indicated on the module <a href="https://minerva.leeds.ac.uk/">Minerva</a> page (<a href="mailto:T.S.Gutleb@leeds.ac.uk">email</a> and Teams messages are generally appropriate).</p>
+					<p>I am always happy to have informal chats about potential PhD project supervision.</p>
+					<!-- Past teaching experience
 					<ul class="pdf-list">
 						<li>Small Class Instructor for Integral Calculus with Applications</br>Jun 2024 - Aug 2024, University of
 							British Columbia, Canada</li>
@@ -331,6 +391,7 @@
 								target="_blank" href="https://ufind.univie.ac.at/en/person.html?id=59491&teaching=true">
 								Oct 2015 - Jul 2018 </a>, University of Vienna, Austria</li>
 					</ul>
+					-->
 				</div>
 			</section>
 
@@ -355,6 +416,174 @@
 	<script defer src="assets/js/breakpoints.min.js"></script>
 	<script defer src="assets/js/util.js"></script>
 	<script defer src="assets/js/main.js"></script>
+	<script>
+		var researchThemeLabels = {
+			ml: 'Scientific Machine Learning',
+			molecular: 'Computational Physics and Materials',
+			medical: 'Computational Medicine',
+			spectral: 'Spectral Methods',
+			functions: 'Special Functions',
+			fractional: 'Fractional Calculus'
+		};
+
+		document.querySelectorAll('.theme-node[data-themes]').forEach(function (node) {
+			var tooltip = document.createElement('span');
+			tooltip.className = 'theme-tooltip';
+			tooltip.setAttribute('aria-hidden', 'true');
+
+			node.dataset.themes.split(',').forEach(function (theme) {
+				var key = theme.trim();
+				var chip = document.createElement('span');
+				chip.className = 'theme-chip theme-' + key;
+				chip.textContent = researchThemeLabels[key] || key;
+				tooltip.append(chip);
+			});
+
+			node.append(tooltip);
+		});
+
+		document.querySelectorAll('.research-map').forEach(function (map) {
+			var panel = map.querySelector('.research-preview-panel');
+			if (!panel) return;
+			var pinnedDot = null;
+
+			var clearPreview = function () {
+				panel.classList.remove('is-visible');
+				panel.replaceChildren();
+			};
+
+			var clearPinnedPreview = function () {
+				if (pinnedDot) {
+					pinnedDot.setAttribute('aria-expanded', 'false');
+					pinnedDot = null;
+				}
+				clearPreview();
+			};
+
+			var showTextPreview = function (title, text) {
+				var preview = document.createElement('span');
+				var heading = document.createElement('strong');
+				var description = document.createElement('span');
+				var type = document.createElement('small');
+
+				preview.className = 'research-preview research-preview-textonly';
+				heading.textContent = title;
+				description.textContent = text;
+				type.textContent = 'Theme';
+				preview.append(heading, description, type);
+				panel.replaceChildren(preview);
+				panel.classList.add('is-visible');
+			};
+
+			map.querySelectorAll('.research-dot').forEach(function (dot) {
+				var preview = Array.prototype.find.call(dot.children, function (child) {
+					return child.classList && child.classList.contains('research-preview');
+				});
+
+				if (!preview) return;
+
+				var title = preview.querySelector('strong');
+				dot.setAttribute('tabindex', '0');
+				dot.setAttribute('role', 'button');
+				dot.setAttribute('aria-expanded', 'false');
+				if (title) dot.setAttribute('aria-label', title.textContent);
+
+				var showPreview = function () {
+					panel.replaceChildren(preview.cloneNode(true));
+					panel.classList.add('is-visible');
+				};
+
+				var hidePreview = function () {
+					if (pinnedDot) return;
+					panel.classList.remove('is-visible');
+					panel.replaceChildren();
+				};
+
+				var togglePinnedPreview = function () {
+					if (pinnedDot === dot) {
+						clearPinnedPreview();
+						return;
+					}
+
+					if (pinnedDot) pinnedDot.setAttribute('aria-expanded', 'false');
+					pinnedDot = dot;
+					dot.setAttribute('aria-expanded', 'true');
+					showPreview();
+				};
+
+				dot.addEventListener('mouseenter', function () {
+					if (!pinnedDot) showPreview();
+				});
+				dot.addEventListener('mouseleave', hidePreview);
+				dot.addEventListener('focus', function () {
+					if (!pinnedDot) showPreview();
+				});
+				dot.addEventListener('blur', hidePreview);
+				dot.addEventListener('click', function (event) {
+					event.stopPropagation();
+					togglePinnedPreview();
+				});
+				dot.addEventListener('keydown', function (event) {
+					if (event.key === 'Enter' || event.key === ' ') {
+						event.preventDefault();
+						togglePinnedPreview();
+					}
+					if (event.key === 'Escape') clearPinnedPreview();
+				});
+			});
+
+			map.querySelectorAll('.research-field > span[data-preview-text]').forEach(function (label) {
+				label.setAttribute('tabindex', '0');
+				label.setAttribute('role', 'button');
+				label.setAttribute('aria-expanded', 'false');
+				label.setAttribute('aria-label', label.textContent + ': ' + label.dataset.previewText);
+
+				var showLabelPreview = function () {
+					if (!pinnedDot) showTextPreview(label.textContent, label.dataset.previewText);
+				};
+
+				var hideLabelPreview = function () {
+					if (!pinnedDot) clearPreview();
+				};
+
+				var togglePinnedLabelPreview = function () {
+					if (pinnedDot === label) {
+						clearPinnedPreview();
+						return;
+					}
+
+					if (pinnedDot) pinnedDot.setAttribute('aria-expanded', 'false');
+					pinnedDot = label;
+					label.setAttribute('aria-expanded', 'true');
+					showTextPreview(label.textContent, label.dataset.previewText);
+				};
+
+				label.addEventListener('mouseenter', showLabelPreview);
+				label.addEventListener('mouseleave', hideLabelPreview);
+				label.addEventListener('focus', showLabelPreview);
+				label.addEventListener('blur', hideLabelPreview);
+				label.addEventListener('click', function (event) {
+					event.stopPropagation();
+					togglePinnedLabelPreview();
+				});
+				label.addEventListener('keydown', function (event) {
+					if (event.key === 'Enter' || event.key === ' ') {
+						event.preventDefault();
+						togglePinnedLabelPreview();
+					}
+					if (event.key === 'Escape') clearPinnedPreview();
+				});
+			});
+
+			map.addEventListener('click', function (event) {
+				if (!event.target.closest('.research-dot')) clearPinnedPreview();
+			});
+
+			document.addEventListener('click', function (event) {
+				if (pinnedDot && !map.contains(event.target)) clearPinnedPreview();
+			});
+		});
+	</script>
 	<!-- LaTeX if needed <script type="text/javascript"
 		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML" async></script> -->
 </body>
