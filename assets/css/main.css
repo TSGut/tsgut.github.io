@@ -3693,6 +3693,12 @@ input[type="button"]:disabled,
 	--dot-size: 1.05em;
 }
 
+.dot-peelpass {
+	--dot-fill: #7c3aed;
+	--x: 42%;
+	--y: 45%;
+}
+
 .dot-package {
 	--dot-size: 0.95em;
 	border-radius: 3px;
@@ -3701,14 +3707,14 @@ input[type="button"]:disabled,
 
 .dot-volterra {
 	--dot-fill: #7c3aed;
-	--x: 40%;
-	--y: 38%;
+	--x: 44.8%;
+	--y: 39.6%;
 }
 
 .dot-triangle {
 	--dot-fill: #7c3aed;
-	--x: 44%;
-	--y: 40%;
+	--x: 42%;
+	--y: 38.8%;
 }
 
 .dot-equilibrium {
@@ -3925,14 +3931,19 @@ input[type="button"]:disabled,
 		width: min(19em, 82vw);
 	}
 
+	.dot-peelpass {
+		--x: 35.8%;
+		--y: 38.5%;
+	}
+
 	.dot-volterra {
-		--x: 35.5%;
-		--y: 42.5%;
+		--x: 39.5%;
+		--y: 44.5%;
 	}
 
 	.dot-triangle {
-		--x: 39.5%;
-		--y: 44.5%;
+		--x: 35.5%;
+		--y: 42.5%;
 	}
 
 	.dot-equilibrium {
