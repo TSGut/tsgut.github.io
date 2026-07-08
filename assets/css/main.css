@@ -3064,13 +3064,6 @@ input[type="button"]:disabled,
 	white-space: nowrap;
 }
 
-.publication-marker-row {
-	align-items: center;
-	display: flex;
-	gap: 0.45em;
-	justify-content: flex-end;
-}
-
 .publication-actions {
 	align-items: center;
 	display: flex;
@@ -3211,10 +3204,6 @@ input[type="button"]:disabled,
 
 	.publication-side {
 		align-items: flex-start;
-	}
-
-	.publication-marker-row {
-		justify-content: flex-start;
 	}
 
 	.theme-tooltip {
