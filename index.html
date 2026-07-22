@@ -169,7 +169,7 @@
 						<label class="publication-search-label" for="publication-search-input">Search publications</label>
 						<div class="publication-search-field">
 							<span class="icon fa-search" aria-hidden="true"></span>
-							<input id="publication-search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search by title, author, journal, or year" aria-controls="publication-list" aria-describedby="publication-search-status" />
+							<input id="publication-search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search by title, author(s), journal, or year" aria-controls="publication-list" aria-describedby="publication-search-status" />
 							<button class="publication-search-clear" type="button" aria-label="Clear publication search" hidden>&times;</button>
 						</div>
 						<p id="publication-search-status" class="publication-search-status" aria-live="polite">15 publications</p>
@@ -482,6 +482,8 @@
 
 				items.forEach(function (item) {
 					var matches = terms.every(function (term) {
+						var number = term.match(/^#?(\d{1,2})\.?$/);
+						if (number) return item.dataset.publicationNumber === String(Number(number[1]));
 						return item.dataset.searchText.includes(term);
 					});
 					item.hidden = !matches;
