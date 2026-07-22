@@ -256,6 +256,42 @@ body.dark-mode .publication-item {
     border-bottom-color: #383d50;
 }
 
+body.dark-mode .publication-item:before {
+    color: #aeb4c5;
+}
+
+body.dark-mode .publication-search input[type="search"] {
+    background: #202431;
+    border-color: #444a5e;
+    color: #f0f2f8;
+}
+
+body.dark-mode .publication-search input[type="search"]::placeholder,
+body.dark-mode .publication-search-field > .icon,
+body.dark-mode .publication-search-status {
+    color: #aeb4c5;
+}
+
+body.dark-mode .publication-search input[type="search"]:focus {
+    border-color: #78a9ff;
+    box-shadow: 0 0 0 3px rgba(120, 169, 255, 0.18);
+}
+
+body.dark-mode .publication-search-clear {
+    color: #aeb4c5;
+}
+
+body.dark-mode .publication-search-clear:hover,
+body.dark-mode .publication-search-clear:focus-visible {
+    background: #303649;
+    color: #ffffff;
+}
+
+body.dark-mode .publication-empty {
+    border-color: #444a5e;
+    color: #aeb4c5;
+}
+
 body.dark-mode .publication-main h3 {
     color: #ffffff;
 }

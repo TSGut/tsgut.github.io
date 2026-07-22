@@ -165,7 +165,16 @@
 							href="https://scholar.google.com/citations?hl=en&user=4uZ9qhIAAAAJ">Google Scholar</a> or <a
 							target="_blank" href="https://www.semanticscholar.org/author/148200620">Semantic
 							Scholar</a>.</p>
-					<div class="publication-list">
+					<div class="publication-search" role="search">
+						<label class="publication-search-label" for="publication-search-input">Search publications</label>
+						<div class="publication-search-field">
+							<span class="icon fa-search" aria-hidden="true"></span>
+							<input id="publication-search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search by title, author, journal, or year" aria-controls="publication-list" aria-describedby="publication-search-status" />
+							<button class="publication-search-clear" type="button" aria-label="Clear publication search" hidden>&times;</button>
+						</div>
+						<p id="publication-search-status" class="publication-search-status" aria-live="polite">15 publications</p>
+					</div>
+					<div id="publication-list" class="publication-list">
 						<article class="publication-item">
 							<div class="publication-main">
 								<h3>Sparse Space-Time Spectral Methods Can Time-Step by Peel and Pass</h3>
@@ -271,6 +280,7 @@
 							</div>
 							<div class="publication-side"><span class="theme-node theme-node-paper dot-triangle" data-themes="spectral" aria-label="Themes: Spectral Methods"></span><time class="publication-date" datetime="2020">2020</time><div class="publication-actions"><a target="_blank" href="https://arxiv.org/abs/1906.03907" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1137/19M1267441" class="primary button small icon fa-external-link tight">DOI</a></div></div>
 						</article>
+						<p class="publication-empty" hidden>No publications match your search.</p>
 					</div>
 					</div>
 			</section>
@@ -441,6 +451,63 @@
 			functions: 'Special Functions',
 			fractional: 'Fractional Calculus'
 		};
+
+		(function () {
+			var search = document.querySelector('#publication-search-input');
+			var list = document.querySelector('#publication-list');
+			if (!search || !list) return;
+
+			var items = Array.from(list.querySelectorAll('.publication-item'));
+			var clearButton = document.querySelector('.publication-search-clear');
+			var status = document.querySelector('#publication-search-status');
+			var empty = list.querySelector('.publication-empty');
+
+			var normalize = function (value) {
+				return value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+			};
+
+			items.forEach(function (item, index) {
+				item.dataset.publicationNumber = items.length - index;
+				item.dataset.searchText = normalize([
+					item.querySelector('.publication-main h3').textContent,
+					item.querySelector('.publication-main p').textContent,
+					item.querySelector('.publication-date').textContent
+				].join(' '));
+			});
+
+			var filterPublications = function () {
+				var query = search.value.trim();
+				var terms = normalize(query).split(/\s+/).filter(Boolean);
+				var visible = 0;
+
+				items.forEach(function (item) {
+					var matches = terms.every(function (term) {
+						return item.dataset.searchText.includes(term);
+					});
+					item.hidden = !matches;
+					if (matches) visible += 1;
+				});
+
+				clearButton.hidden = !query;
+				empty.hidden = visible !== 0;
+				status.textContent = query ? visible + ' of ' + items.length + ' publications' : items.length + ' publications';
+			};
+
+			search.addEventListener('input', filterPublications);
+			search.addEventListener('search', filterPublications);
+			search.addEventListener('keydown', function (event) {
+				if (event.key === 'Escape' && search.value) {
+					search.value = '';
+					filterPublications();
+				}
+			});
+			clearButton.addEventListener('click', function () {
+				search.value = '';
+				filterPublications();
+				search.focus();
+			});
+			filterPublications();
+		}());
 
 		document.querySelectorAll('.theme-node[data-themes]').forEach(function (node) {
 			var tooltip = document.createElement('span');
