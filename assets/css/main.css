@@ -3380,6 +3380,10 @@ input[type="button"]:disabled,
 	text-decoration: none;
 }
 
+.software-item-fractional {
+	border-left-color: #15803d;
+}
+
 .software-item > .theme-node {
 	align-self: start;
 	justify-self: end;
@@ -3414,6 +3418,29 @@ input[type="button"]:disabled,
 .software-list h3.software-title-long {
 	font-size: 0.86em;
 	white-space: nowrap;
+}
+
+.software-name-with-logo {
+	align-items: center;
+	display: inline-flex;
+	gap: 0.45em;
+	line-height: 1.15;
+	min-width: 0;
+	vertical-align: middle;
+}
+
+.software-name-with-logo a {
+	min-width: 0;
+}
+
+.yonderdrake-inline-logo {
+	display: inline-block;
+	flex: 0 0 auto;
+	height: 1.45em;
+	max-width: 3.8em;
+	object-fit: contain;
+	vertical-align: middle;
+	width: auto;
 }
 
 .software-item:hover h3,
@@ -3459,6 +3486,11 @@ input[type="button"]:disabled,
 		font-size: clamp(0.56em, 3.15vw, 0.86em);
 		line-height: 1.2;
 	}
+
+	.software-list .yonderdrake-inline-logo {
+		height: 1.35em;
+		max-width: 3.7em;
+	}
 }
 
 .language-icon {
@@ -3468,6 +3500,13 @@ input[type="button"]:disabled,
 	justify-content: center;
 	position: relative;
 	width: 2.1em;
+}
+
+.yonderdrake-language-logo {
+	height: 2.15em;
+	object-fit: contain;
+	object-position: center;
+	width: 2.15em;
 }
 
 .julia-icon i {
@@ -3718,7 +3757,7 @@ input[type="button"]:disabled,
 	width: min(24em, calc(100vw - 3em));
 }
 
-.research-preview img,
+.research-preview > img,
 .research-placeholder {
 	aspect-ratio: 1;
 	border-radius: 6px;
@@ -3751,6 +3790,18 @@ input[type="button"]:disabled,
 .research-preview strong a {
 	color: inherit;
 	border-bottom-color: rgba(255, 255, 255, 0.45);
+}
+
+.research-preview .yonderdrake-inline-logo {
+	aspect-ratio: auto;
+	border-radius: 0;
+	display: inline-block;
+	flex: 0 0 auto;
+	grid-row: auto;
+	height: 1.45em;
+	max-width: 3.8em;
+	object-fit: contain;
+	width: auto;
 }
 
 .research-preview small {
@@ -3971,6 +4022,12 @@ input[type="button"]:disabled,
 	--y: 67.5%;
 }
 
+.dot-yonderdrake {
+	--dot-fill: #15803d;
+	--x: 56%;
+	--y: 80%;
+}
+
 .research-legend {
 	background: rgba(31, 35, 49, 0.96);
 	border: solid 1px #454b63;
@@ -4183,6 +4240,11 @@ input[type="button"]:disabled,
 	.dot-semiclassical {
 		--x: 30.3%;
 		--y: 67.5%;
+	}
+
+	.dot-yonderdrake {
+		--x: 56.3%;
+		--y: 77.4%;
 	}
 
 	.research-legend {
