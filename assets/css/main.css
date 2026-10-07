@@ -3232,6 +3232,27 @@ input[type="button"]:disabled,
 	color: #ffffff !important;
 }
 
+.publication-actions .whiterose-button,
+.research-preview-actions .whiterose-button {
+	background-color: #1f7a5a;
+	color: #ffffff !important;
+}
+
+.publication-actions .whiterose-button:hover,
+.research-preview-actions .whiterose-button:hover {
+	background-color: #2a8f6b;
+	color: #ffffff !important;
+}
+
+.whiterose-button img {
+	display: inline-block;
+	filter: brightness(0) invert(1);
+	height: 1.05em;
+	margin: -0.15em 0.35em 0 0;
+	vertical-align: middle;
+	width: auto;
+}
+
 .theme-node {
 	background: var(--dot-fill, #6f42c1);
 	border: solid 2px #000000;
@@ -3674,8 +3695,8 @@ input[type="button"]:disabled,
 	--label-x: 20%;
 	--label-y: 38%;
 	--r: 9deg;
-	--w: 21em;
-	--x: 43%;
+	--w: 19.2em;
+	--x: 41.5%;
 	--y: 52.5%;
 }
 
@@ -3980,6 +4001,12 @@ input[type="button"]:disabled,
 	--y: 62.5%;
 }
 
+.dot-timehf {
+	--dot-fill: linear-gradient(90deg, #3b82f6 0%, #3b82f6 50%, #9f1239 50%, #9f1239 100%);
+	--x: 70%;
+	--y: 53%;
+}
+
 .dot-ace {
 	--dot-fill: linear-gradient(90deg, #3b82f6 0%, #3b82f6 50%, #d9480f 50%, #d9480f 100%);
 	--x: 75%;
@@ -4136,7 +4163,7 @@ input[type="button"]:disabled,
 		--h: 8.2em;
 		--w: 10.9em;
 		--x: 65.2%;
-		--y: 59%;
+		--y: 56.5%;
 	}
 
 	.research-field span {
@@ -4207,6 +4234,11 @@ input[type="button"]:disabled,
 		--y: 62.5%;
 	}
 
+	.dot-timehf {
+		--x: 75%;
+		--y: 51%;
+	}
+
 	.dot-ace {
 		--x: 75%;
 		--y: 33.5%;
@@ -4243,7 +4275,7 @@ input[type="button"]:disabled,
 	}
 
 	.dot-yonderdrake {
-		--x: 56.3%;
+		--x: 58.8%;
 		--y: 77.4%;
 	}
 
