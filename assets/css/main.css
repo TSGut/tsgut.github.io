@@ -3405,6 +3405,10 @@ input[type="button"]:disabled,
 	border-left-color: #15803d;
 }
 
+.software-item-functions {
+	border-left-color: #b7791f;
+}
+
 .software-item > .theme-node {
 	align-self: start;
 	justify-self: end;
@@ -3523,7 +3527,8 @@ input[type="button"]:disabled,
 	width: 2.1em;
 }
 
-.yonderdrake-language-logo {
+.yonderdrake-language-logo,
+.leanfun-language-logo {
 	height: 2.15em;
 	object-fit: contain;
 	object-position: center;
@@ -4044,6 +4049,12 @@ input[type="button"]:disabled,
 }
 
 .dot-semiclassical {
+	--dot-fill: #7c3aed;
+	--x: 47%;
+	--y: 45.5%;
+}
+
+.dot-leanfun {
 	--dot-fill: linear-gradient(90deg, #7c3aed 0%, #7c3aed 50%, #b7791f 50%, #b7791f 100%);
 	--x: 32%;
 	--y: 67.5%;
@@ -4270,6 +4281,11 @@ input[type="button"]:disabled,
 	}
 
 	.dot-semiclassical {
+		--x: 40.5%;
+		--y: 40.5%;
+	}
+
+	.dot-leanfun {
 		--x: 30.3%;
 		--y: 67.5%;
 	}
