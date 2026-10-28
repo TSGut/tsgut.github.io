@@ -3253,6 +3253,37 @@ input[type="button"]:disabled,
 	width: auto;
 }
 
+.publication-actions .researchgate-button,
+.research-preview-actions .researchgate-button {
+	background-color: #0b8178;
+	color: #ffffff !important;
+}
+
+.publication-actions .researchgate-button:hover,
+.research-preview-actions .researchgate-button:hover {
+	background-color: #10998e;
+	color: #ffffff !important;
+}
+
+.researchgate-button .ai {
+	color: #ffffff;
+	font-size: 1.05em;
+	margin-right: 0.35em;
+	vertical-align: -0.1em;
+}
+
+.publication-actions .pdf-button,
+.research-preview-actions .pdf-button {
+	background-color: #4b5563;
+	color: #ffffff !important;
+}
+
+.publication-actions .pdf-button:hover,
+.research-preview-actions .pdf-button:hover {
+	background-color: #5f6b7a;
+	color: #ffffff !important;
+}
+
 .theme-node {
 	background: var(--dot-fill, #6f42c1);
 	border: solid 2px #000000;
