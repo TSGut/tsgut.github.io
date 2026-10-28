@@ -4050,8 +4050,8 @@ input[type="button"]:disabled,
 
 .dot-semiclassical {
 	--dot-fill: #7c3aed;
-	--x: 47%;
-	--y: 45.5%;
+	--x: 45.3%;
+	--y: 45%;
 }
 
 .dot-leanfun {
@@ -4216,12 +4216,12 @@ input[type="button"]:disabled,
 	}
 
 	.dot-annuli {
-		--x: 29.8%;
+		--x: 28.3%;
 		--y: 62.5%;
 	}
 
 	.dot-measuremods {
-		--x: 32.8%;
+		--x: 31.3%;
 		--y: 64%;
 	}
 
@@ -4281,17 +4281,17 @@ input[type="button"]:disabled,
 	}
 
 	.dot-semiclassical {
-		--x: 40.5%;
-		--y: 40.5%;
+		--x: 38.6%;
+		--y: 40.2%;
 	}
 
 	.dot-leanfun {
-		--x: 30.3%;
+		--x: 28.8%;
 		--y: 67.5%;
 	}
 
 	.dot-yonderdrake {
-		--x: 58.8%;
+		--x: 61.5%;
 		--y: 77.4%;
 	}
 
