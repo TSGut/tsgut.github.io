@@ -3489,7 +3489,8 @@ input[type="button"]:disabled,
 	min-width: 0;
 }
 
-.yonderdrake-inline-logo {
+.yonderdrake-inline-logo,
+.dace-inline-logo {
 	display: inline-block;
 	flex: 0 0 auto;
 	height: 1.45em;
@@ -3543,7 +3544,8 @@ input[type="button"]:disabled,
 		line-height: 1.2;
 	}
 
-	.software-list .yonderdrake-inline-logo {
+	.software-list .yonderdrake-inline-logo,
+	.software-list .dace-inline-logo {
 		height: 1.35em;
 		max-width: 3.7em;
 	}
@@ -3559,7 +3561,8 @@ input[type="button"]:disabled,
 }
 
 .yonderdrake-language-logo,
-.leanfun-language-logo {
+.leanfun-language-logo,
+.dace-language-logo {
 	height: 2.15em;
 	object-fit: contain;
 	object-position: center;
@@ -3849,7 +3852,8 @@ input[type="button"]:disabled,
 	border-bottom-color: rgba(255, 255, 255, 0.45);
 }
 
-.research-preview .yonderdrake-inline-logo {
+.research-preview .yonderdrake-inline-logo,
+.research-preview .dace-inline-logo {
 	aspect-ratio: auto;
 	border-radius: 0;
 	display: inline-block;
@@ -4091,6 +4095,12 @@ input[type="button"]:disabled,
 	--y: 67.5%;
 }
 
+.dot-dace {
+	--dot-fill: linear-gradient(90deg, #3b82f6 0%, #3b82f6 50%, #9f1239 50%, #9f1239 100%);
+	--x: 65%;
+	--y: 54%;
+}
+
 .dot-yonderdrake {
 	--dot-fill: #15803d;
 	--x: 56%;
@@ -4319,6 +4329,11 @@ input[type="button"]:disabled,
 	.dot-leanfun {
 		--x: 28.8%;
 		--y: 67.5%;
+	}
+
+	.dot-dace {
+		--x: 70%;
+		--y: 52.5%;
 	}
 
 	.dot-yonderdrake {
