@@ -15,6 +15,13 @@
 </head>
 
 <body class="is-preload">
+	<script>
+		var savedTheme = null;
+		try {
+			savedTheme = localStorage.getItem('theme');
+		} catch (error) {}
+		if (savedTheme !== 'light') document.body.classList.add('dark-mode');
+	</script>
 	<section id="header">
 		<header>
 <p></p>
@@ -147,9 +154,14 @@
 
 							</div>
 							<div class="research-key">
-								<div class="research-legend" role="group" aria-label="Show on map">
-									<span data-dot-kind="dot-paper"><i class="legend-dot legend-paper"></i>Paper</span>
-									<span data-dot-kind="dot-package"><i class="legend-dot legend-package"></i>Software</span>
+								<div class="research-legend-row">
+									<div class="research-legend" role="group" aria-label="Show on map">
+										<span data-dot-kind="dot-paper"><i class="legend-dot legend-paper"></i>Paper</span>
+										<span data-dot-kind="dot-package"><i class="legend-dot legend-package"></i>Software</span>
+									</div>
+									<div class="research-legend research-swarm-box">
+										<span class="research-swarm-toggle"><svg class="legend-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5 14 14 8 10.8 2 14Z" /></svg>Launch Swarm</span>
+									</div>
 								</div>
 								<div class="research-field-legend" aria-label="Research themes">
 									<span class="field-legend-ml" data-theme="ml" data-preview-text="Learning models constrained by scientific application domain knowledge and structure.">Scientific Machine Learning</span>
@@ -304,6 +316,9 @@
 							<div class="publication-side"><span class="theme-node theme-node-paper dot-triangle" data-themes="spectral" aria-label="Themes: Spectral Methods"></span><time class="publication-date" datetime="2020">2020</time><div class="publication-actions"><a target="_blank" href="https://arxiv.org/abs/1906.03907" class="primary button small icon fa-external-link tight">arXiv</a><a target="_blank" href="https://doi.org/10.1137/19M1267441" class="primary button small icon fa-external-link tight">DOI</a></div></div>
 						</article>
 						<p class="publication-empty" hidden>No publications match your search.</p>
+					</div>
+					<div class="publication-more">
+						<button class="button small" type="button" aria-controls="publication-list" aria-expanded="false" hidden></button>
 					</div>
 					</div>
 			</section>
@@ -489,6 +504,7 @@
 	<script defer src="assets/js/breakpoints.min.js"></script>
 	<script defer src="assets/js/util.js"></script>
 	<script defer src="assets/js/main.js"></script>
+	<script defer src="assets/js/swarm.js"></script>
 	<script>
 		var researchThemeLabels = {
 			ml: 'Scientific Machine Learning',
@@ -522,25 +538,40 @@
 				].join(' '));
 			});
 
+			var moreButton = document.querySelector('.publication-more .button');
+			var collapsedCount = 5;
+			var expanded = false;
+
 			var filterPublications = function () {
 				var query = search.value.trim();
 				var terms = normalize(query).split(/\s+/).filter(Boolean);
 				var visible = 0;
 
-				items.forEach(function (item) {
+				items.forEach(function (item, index) {
 					var matches = terms.every(function (term) {
 						var number = term.match(/^#?(\d{1,2})\.?$/);
 						if (number) return item.dataset.publicationNumber === String(Number(number[1]));
 						return item.dataset.searchText.includes(term);
 					});
-					item.hidden = !matches;
+					item.hidden = !matches || (!query && !expanded && index >= collapsedCount);
 					if (matches) visible += 1;
 				});
 
 				clearButton.hidden = !query;
 				empty.hidden = visible !== 0;
 				status.textContent = query ? visible + ' of ' + items.length + ' publications' : items.length + ' publications';
+				moreButton.hidden = Boolean(query) || items.length <= collapsedCount;
+				moreButton.textContent = expanded ? 'Show fewer' : 'Show all ' + items.length + ' publications';
+				moreButton.setAttribute('aria-expanded', String(expanded));
 			};
+
+			moreButton.addEventListener('click', function () {
+				var buttonTop = moreButton.getBoundingClientRect().top;
+
+				expanded = !expanded;
+				filterPublications();
+				if (!expanded) window.scrollBy({ top: moreButton.getBoundingClientRect().top - buttonTop, behavior: 'instant' });
+			});
 
 			search.addEventListener('input', filterPublications);
 			search.addEventListener('search', filterPublications);
@@ -761,6 +792,39 @@
 				});
 			});
 
+			var swarmToggle = map.querySelector('.research-swarm-toggle');
+			var swarm = null;
+
+			var setSwarm = function (active) {
+				if (active === (swarmToggle.getAttribute('aria-pressed') === 'true')) return;
+
+				swarmToggle.setAttribute('aria-pressed', String(active));
+				map.classList.toggle('has-swarm', active);
+				if (active) {
+					var mapBox = map.getBoundingClientRect();
+					var toggleBox = swarmToggle.getBoundingClientRect();
+
+					swarm = swarm || createResearchSwarm(map);
+					swarm.start(toggleBox.left - mapBox.left, toggleBox.top - mapBox.top + toggleBox.height / 2);
+				} else if (swarm) {
+					swarm.stop();
+				}
+			};
+
+			swarmToggle.setAttribute('tabindex', '0');
+			swarmToggle.setAttribute('role', 'button');
+			swarmToggle.setAttribute('aria-pressed', 'false');
+			swarmToggle.addEventListener('click', function (event) {
+				event.stopPropagation();
+				setSwarm(swarmToggle.getAttribute('aria-pressed') !== 'true');
+			});
+			swarmToggle.addEventListener('keydown', function (event) {
+				if (event.key === 'Enter' || event.key === ' ') {
+					event.preventDefault();
+					setSwarm(swarmToggle.getAttribute('aria-pressed') !== 'true');
+				}
+			});
+
 			map.querySelectorAll('.research-legend span[data-dot-kind]').forEach(function (toggle) {
 				var kind = toggle.dataset.dotKind;
 
@@ -773,6 +837,7 @@
 
 					toggle.setAttribute('aria-pressed', String(!hidden));
 					if (hidden && pinnedDot && pinnedDot.classList.contains(kind)) clearPinnedPreview();
+					if (swarm) swarm.updateNodes();
 				};
 
 				toggle.addEventListener('click', function (event) {
