@@ -345,25 +345,17 @@ body.dark-mode .research-field {
     opacity: 1;
 }
 
-body.dark-mode .research-field:hover {
-    background: color-mix(in srgb, var(--field-color) 24%, transparent);
-    border-color: color-mix(in srgb, var(--field-color) 70%, transparent);
-    color: color-mix(in srgb, var(--field-color) 84%, transparent);
+body.dark-mode .research-map.has-active-theme .research-field {
+    opacity: 0.32;
 }
 
-body.dark-mode .research-field span {
-    background: color-mix(in srgb, var(--field-color) 28%, rgba(22, 25, 35, 0.86));
-    border-color: color-mix(in srgb, var(--field-color) 55%, transparent);
-    color: #ffffff;
-    mix-blend-mode: normal;
+body.dark-mode .research-map.has-active-theme .research-field.is-theme-active {
     opacity: 1;
 }
 
-body.dark-mode .research-field span[data-preview-text]:hover,
-body.dark-mode .research-field span[data-preview-text]:focus-visible,
-body.dark-mode .research-field span[data-preview-text][aria-expanded="true"] {
-    background: color-mix(in srgb, var(--field-color) 42%, rgba(22, 25, 35, 0.92));
-    border-color: color-mix(in srgb, var(--field-color) 84%, #ffffff);
+body.dark-mode .research-lock:before,
+body.dark-mode .research-lock:after {
+    background: #ffffff;
 }
 
 body.dark-mode .research-dot {
@@ -383,6 +375,10 @@ body.dark-mode .research-legend {
     background: rgba(31, 35, 49, 0.96);
     border-color: #454b63;
     color: #ffffff;
+}
+
+body.dark-mode .research-preview-panel .research-preview {
+    background: #1f2331;
 }
 
 body.dark-mode .research-preview strong,
@@ -407,4 +403,10 @@ body.dark-mode .research-field-legend span {
     background: color-mix(in srgb, var(--field-color) 28%, rgba(22, 25, 35, 0.86));
     border-color: color-mix(in srgb, var(--field-color) 55%, transparent);
     color: #ffffff;
+}
+
+body.dark-mode .research-field-legend span:focus-visible,
+body.dark-mode .research-field-legend span.is-theme-active {
+    background: color-mix(in srgb, var(--field-color) 42%, rgba(22, 25, 35, 0.92));
+    border-color: color-mix(in srgb, var(--field-color) 84%, #ffffff);
 }
