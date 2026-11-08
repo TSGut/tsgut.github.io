@@ -2307,6 +2307,86 @@ input[type="radio"]+label:before {
 
 .image.avatar {}
 
+#header>header .avatar.portrait-toggle {
+	position: relative;
+	aspect-ratio: 1;
+	height: auto;
+	padding: 0;
+	border: solid 3px #000;
+	border-radius: 8px;
+	overflow: hidden;
+	background: transparent;
+	box-shadow: none;
+	font: inherit;
+	line-height: 0;
+	opacity: 1;
+	cursor: pointer;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
+
+#header>header .avatar.portrait-toggle:disabled {
+	cursor: default;
+}
+
+#header>header .avatar.portrait-toggle:focus-visible {
+	outline: 3px solid #a5cfff;
+	outline-offset: 4px;
+}
+
+#header>header .avatar.portrait-toggle img {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	border-radius: 0;
+	object-fit: cover;
+	pointer-events: none;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+
+.portrait-pixel {
+	image-rendering: pixelated;
+}
+
+.portrait-pixel,
+.portrait-ascii,
+.portrait-photo {
+	opacity: 0;
+	transition: opacity 220ms ease;
+}
+
+.portrait-toggle[data-portrait="pixel"]>.portrait-pixel,
+.portrait-toggle[data-portrait="ascii"]>.portrait-ascii,
+.portrait-toggle[data-portrait="photo"] .portrait-reveal .portrait-pixel,
+.portrait-toggle[data-portrait="pixel"] .portrait-reveal .portrait-ascii,
+.portrait-toggle[data-portrait="ascii"] .portrait-reveal .portrait-photo {
+	opacity: 1;
+}
+
+.portrait-reveal {
+	position: absolute;
+	inset: 0;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 180ms ease;
+	-webkit-mask-image: radial-gradient(circle 54px at var(--portrait-x, 50%) var(--portrait-y, 50%), #000 0, #000 25%, transparent 100%);
+	mask-image: radial-gradient(circle 54px at var(--portrait-x, 50%) var(--portrait-y, 50%), #000 0, #000 25%, transparent 100%);
+}
+
+.portrait-toggle.is-revealing .portrait-reveal {
+	opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.portrait-toggle img,
+	.portrait-reveal {
+		transition: none;
+	}
+}
+
 .image.avatar img {
 	border: solid 3px #000000;
 	border-radius: 8px;
